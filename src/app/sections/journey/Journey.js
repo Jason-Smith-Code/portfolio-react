@@ -1,10 +1,10 @@
 import React from "react";
-import "./Journey.css";
+import "./Journey.scss";
 
 export const Journey = () => {
   return (
-    <>
+    <section>
       <p>Journey</p>
-    </>
+    </section>
   );
 };

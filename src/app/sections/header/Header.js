@@ -1,17 +1,16 @@
 import React from "react";
 import { Menu } from "./Menu";
 import "./Header.scss";
-import Logo from "../../../images/logo.png";
+import Logo from "../../../images/logo-100.png";
 
 export const Header = () => {
   return (
-    <>
-      <img src={Logo}></img>
-      <p>Header</p>
+    <header>
+      {/* Add link wrapper to logo */}
+      <img id="top-logo" src={Logo}></img>
       <Menu />
-    </>
+    </header>
   );
 };
 
-//  import the logo
 // fix the header to the top of the screen

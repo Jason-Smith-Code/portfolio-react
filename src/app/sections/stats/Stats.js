@@ -1,10 +1,10 @@
 import React from "react";
-import "./Stats.css";
+import "./Stats.scss";
 
 export const Stats = () => {
   return (
-    <>
+    <section>
       <p>Stats</p>
-    </>
+    </section>
   );
 };
