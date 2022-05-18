@@ -30,8 +30,8 @@ $text: #FF7B24;
 
 @font-face {
     font-family: 'tekolight';
-    src: url('fonts/teko-light-webfont.woff2') format('woff2'),
-         url('fonts/teko-light-webfont.woff') format('woff');
+    src: url('/src/app/fonts/teko-light-webfont.woff2') format('woff2'),
+         url('/src/app/fonts/teko-light-webfont.woff') format('woff');
     font-weight: 100;
     font-style: none;
 }
@@ -76,9 +76,13 @@ body {
 }
 
 /* FONTS */
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'tekolight', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'tekolight', Arial, Helvetica, sans-serif;
     font-size: 3em;
     text-transform: uppercase;
     line-height: 1;

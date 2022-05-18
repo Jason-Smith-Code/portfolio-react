@@ -1,0 +1,118 @@
+@use '../../App.scss';
+
+@media only screen and (min-width: 0px) {
+
+    #openMenuButton {
+        display:block;
+     }
+
+    .closeMenuButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-right: 20px;
+        color:  App.$SuperDarkGrey;
+    }
+    
+    .mobileMenu {
+        padding-top: 100px;
+        transition: ease-in-out 500ms;
+        position: fixed;
+        transform: translateX(300px);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 220px;
+        background-color: App.$text;
+        box-shadow: 0px 0px 20px 5px  App.$SuperDarkGrey;
+    }
+    
+    .menu-item-container {
+        position: relative;
+    }
+    
+    .rightBracket, .leftBracket {
+        line-height: 1.5;
+        font-family: 'tekolight', Arial, Helvetica, sans-serif;
+        color: App.$text;
+        transition: 1s;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1.5rem;
+        position: absolute;
+        transition: linear 200ms;
+    }
+    
+    .leftBracket {
+        left: 0;
+    }
+    
+    .rightBracket {
+        right: 0;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    ul#verticalMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-item {
+        color: App.$text;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 3px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+    
+    .menu-item-container:hover span.leftBracket {
+        left: 12px;
+    }
+    
+    .menu-item-container:hover span.rightBracket {
+        right: 15px;
+    }
+    
+    .verticalLinkPadding {
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    nav#desktopMenu {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1266px) {
+    #menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-item-container {
+        margin-left: 20px;
+    }
+
+    #openMenuButton {
+        display:none;
+    }
+}
