@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "./sections/header/Header";
 import { About } from "./sections/about/About";
 import { Experience } from "./sections/experience/Experience";
@@ -12,18 +12,28 @@ import { JsAnimation } from "./sections/jsAnimation/JsAnimation";
 import "./App.scss";
 
 const App = () => {
+  const [animationPlayed, setAnimationPlayed] = useState("false");
+
+  const sendDataToParent = (value) => { // the callback. Use a better name
+    console.log(value);
+    setAnimationPlayed(value);
+  };
+  
+
   return (
     <>
-      <JsAnimation />
-      <Header />
-      <Intro />
-      <Me />
-      <Stats />
-      <About />
-      <Journey />
-      <Experience />
-      <Portfolio />
-      <Footer />
+    {animationPlayed === true ?  
+      <>
+        <Header />
+        <Intro />
+        <Me />
+        <Stats />
+        <About />
+        <Journey />
+        <Experience />
+        <Portfolio />
+        <Footer />
+    </> : <JsAnimation sendDataToParent={sendDataToParent} />}
     </>
   );
 };
