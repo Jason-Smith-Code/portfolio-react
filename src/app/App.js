@@ -14,26 +14,35 @@ import "./App.scss";
 const App = () => {
   const [animationPlayed, setAnimationPlayed] = useState("false");
 
-  const sendDataToParent = (value) => { // the callback. Use a better name
-    console.log(value);
+  const sendDataToParent = (value) => {
+    // the callback. Use a better name
     setAnimationPlayed(value);
   };
-  
 
   return (
     <>
-    {animationPlayed === true ?  
-      <>
-        <Header />
-        <Intro />
-        <Me />
-        <Stats />
-        <About />
-        <Journey />
-        <Experience />
-        <Portfolio />
-        <Footer />
-    </> : <JsAnimation sendDataToParent={sendDataToParent} />}
+      {animationPlayed === true ? (
+        <>
+          <Header />
+          <a id="intro"></a>
+          <Intro />
+          <a id="me"></a>
+          <Me />
+          <a id="stats"></a>
+          <Stats />
+          <a id="about"></a>
+          <About />
+          <a id="journey"></a>
+          <Journey />
+          <a id="experience"></a>
+          <Experience />
+          <a id="portfolio"></a>
+          <Portfolio />
+          <Footer />
+        </>
+      ) : (
+        <JsAnimation sendDataToParent={sendDataToParent} />
+      )}
     </>
   );
 };

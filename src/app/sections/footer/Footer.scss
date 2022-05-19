@@ -1,0 +1,88 @@
+@use '../../App.scss';
+
+@media only screen and (min-width: 0px) {
+   
+    #footerlogo {
+        width: 100px;
+    }
+    
+    .footer-link {
+        text-decoration: none;
+        padding-top:10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+    
+    .footer-heading {
+        font-size: 2em;
+        color: var(--text);
+        margin-bottom: 25px;
+    }
+    
+    footer{
+        width: 100%;
+    }
+
+    #footer-section {
+        padding: 100px 0px;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .footer-block {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .footer-item-container {
+        width: 100%;
+    }
+    
+    #social-icon-container {
+        border-top: 1px solid #ff550073;
+        text-align: center;
+        padding: 10px;
+        width:100%;
+    }
+
+    .icon {
+        color: App.$text;
+        margin: 0 100px;
+        transition: 500ms;
+    }
+
+    .icon:hover {
+        color: white;
+    }
+        
+}
+
+@media only screen and (min-width: 500px) {
+
+    #footer-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-block {
+        width: 50%;
+    }  
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-block {
+        width: 25%;
+    }  
+}
+
+@media only screen and (min-width: 1266px) {
+
+}

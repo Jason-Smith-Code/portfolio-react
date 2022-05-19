@@ -4,7 +4,7 @@ export const DesktopMenu = (menuItem) => {
   return (
     <>
       {menuItem.type === "link" ? (
-        <li className="menu-item-container">
+        <li className="menu-item-container menu-spacing">
           <span className="leftBracket">[</span>
           <a className="menu-item" href={`#${menuItem.name}`}>
             {menuItem.name}
@@ -12,7 +12,7 @@ export const DesktopMenu = (menuItem) => {
           <span className="rightBracket">]</span>
         </li>
       ) : (
-        <li className="menu-item-container">
+        <li className="menu-item-container menu-spacing">
           <span className="leftBracket">[</span>
           <a
             href="download/cv.pdf"

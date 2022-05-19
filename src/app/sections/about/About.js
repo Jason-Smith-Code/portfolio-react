@@ -1,10 +1,54 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useIntersection } from "../../useIntersection";
 import "./About.scss";
 
 export const About = () => {
+  const ref = useRef();
+  const inViewport = useIntersection(ref, "100px");
+
+  if (inViewport) {
+    ref.current.classList.remove("hidden");
+    ref.current.classList.add("fade-in-element");
+  }
+
   return (
     <section>
-      <p>About</p>
+      <div ref={ref} className="text-block centerContainer hidden">
+        <h2 className="headline">About</h2>
+        <p className="text">
+          For the past 10 years I've been self employed, running a small
+          business which was both a physical and online artist materials store.
+          I've worked alone during this time discovering that I was very much
+          self motivated, determined, and enthusiastic. but during my self
+          employment I wanted to pursue a greater goal. Over the past 2 years I
+          spent my time planning a transition to change my occupation, following
+          a set of goals, learning and absorbing as much as I can whilst
+          balancing my business and home life. Working with code is something
+          I've always wanted to do, I'm keen to learn more and would love an
+          opportunity to settle into a job in this field. Outside of work, I'm a
+          gamer, a huge fan of real time strategies games, action RPG's and
+          occasionally I play first person shooter's (very badly). I also love
+          to draw and paint, although that hobby has taken a back seat recently.
+          I have a beautiful partner called Sam, and a lovely 3 year old son
+          called Casey.
+        </p>
+        <div id="hobbies-personality">
+          <div id="hobbies-container">
+            <h4 className="headline">Hobbies</h4>
+            <p>Spending time with family</p>
+            <p>Gaminig</p>
+            <p>Learning</p>
+            <p>Art, drawing, painting</p>
+          </div>
+          <div>
+            <h4 className="headline">Personality</h4>
+            <p>Honest</p>
+            <p>Easy-going</p>
+            <p>Polite</p>
+            <p>Determined</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
