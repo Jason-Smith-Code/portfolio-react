@@ -105,7 +105,9 @@ export const Stats = () => {
         <div className="statRow">
           <span className="statsDescription">HTML:</span>
           <span>[&nbsp;</span>
-          <span className="html dark ">|</span>
+          <span ref={ref} className="html dark ">
+            |
+          </span>
           <span className="html dark ">|</span>
           <span className="html dark ">|</span>
           <span className="html dark ">|</span>
