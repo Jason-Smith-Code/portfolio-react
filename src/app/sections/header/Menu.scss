@@ -44,7 +44,6 @@
         font-family: 'tekolight', Arial, Helvetica, sans-serif;
         color: App.$text;
         transition: 1s;
-        cursor: pointer;
         text-decoration: none;
         font-size: 1.5em;
         position: absolute;
@@ -71,14 +70,25 @@
     
     .menu-item {
         color: App.$text;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 10px 20px;
         letter-spacing: 3px;
         font-size: 1.5em;
         text-transform: uppercase;
         font-family: 'tekolight', Arial, Helvetica, sans-serif;
         font-weight: 100;
+        transition: 250ms;
     }
+
+    .darkText {
+        font-family: 'tekolight', Arial, Helvetica, sans-serif;
+        color: App.$SuperDarkGrey;
+    }
+
+    .menu-item:hover, a.darkText:hover {
+        color: white;
+    }
+
+
     
     .menu-item-container:hover span.leftBracket {
         left: 12px;

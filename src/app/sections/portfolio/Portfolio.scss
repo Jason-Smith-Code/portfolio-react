@@ -9,7 +9,7 @@
         cursor: grab;
         padding: 5px;
         border-radius: 10px 30px;
-        width: 3000px;
+        width: 300px;
         margin-right: 50px;
         background: App.$SuperDarkGrey;
         counter-increment: gallery-cell;
@@ -29,6 +29,10 @@
         letter-spacing: 3px;
         font-size: 1.5em;
         text-transform: uppercase;
+        transition: 250ms;
+    }
+    .git-hub-link:hover {
+        color:white;
     }
 
     .git-hub-link-container {

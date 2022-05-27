@@ -1,12 +1,21 @@
 import React from "react";
 
 export const MobileMenu = (menuItem) => {
+  function closeMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.add("off-screen");
+  }
+
   return (
     <>
       {menuItem.type === "link" ? (
         <li className="menu-item-container verticalLinkPadding">
           <span className="leftBracket darkText">[</span>
-          <a className="menu-item darkText" href={`#${menuItem.name}`}>
+          <a
+            onClick={closeMenu}
+            className="menu-item darkText"
+            href={`#${menuItem.name}`}
+          >
             {menuItem.name}
           </a>
           <span className="darkText rightBracket">]</span>
@@ -15,6 +24,7 @@ export const MobileMenu = (menuItem) => {
         <li className="menu-item-container verticalLinkPadding">
           <span className="leftBracket darkText">[</span>
           <a
+            onClick={closeMenu}
             className="menu-item darkText"
             href="download/cv.pdf"
             target="_blank"
