@@ -5,47 +5,13 @@ import sennelier from "../../../images/portfolio-images/sennelier.jpg";
 import taskify from "../../../images/portfolio-images/taskify.jpg";
 import weather from "../../../images/portfolio-images/weather.jpg";
 import website from "../../../images/portfolio-images/website.jpg";
+import keyboard from "../../../images/portfolio-images/keyboard.jpg";
 import Flickity from "react-flickity-component";
 
 export const Portfolio = () => {
   const flickityOptions = {
     initialIndex: 0,
   };
-
-  const portfolioItems = [
-    {
-      title: "taskify",
-      image: taskify,
-      description:
-        "Create a web application using react which allows users to fill in a short form to display their tasks. A user starts off by creating a category to organise and group their tasks. After creating a category the user can then start adding their tasks, each task can then be marked as complete, editted or deleted.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "Javascrpt",
-        "React",
-        "Redux Toolkit",
-        "Jest",
-        "React Router",
-      ],
-      github: "https://github.com/Jason-Smith-Code/taskify",
-    },
-    {
-      title: "Taskify",
-      image: taskify,
-      description:
-        "Create a web application using react which allows users to fill in a short form to display their tasks. A user starts off by creating a category to organise and group their tasks. After creating a category the user can then start adding their tasks, each task can then be marked as complete, editted or deleted.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "Javascrpt",
-        "React",
-        "Redux Toolkit",
-        "Jest",
-        "React Router",
-      ],
-      github: "https://github.com/Jason-Smith-Code/taskify",
-    },
-  ];
 
   function Carousel() {
     return (
@@ -97,7 +63,7 @@ export const Portfolio = () => {
             <div className="projectImage">
               <img src={website} className="portfolioImage"></img>
             </div>
-            <p className="featureProjectTitle">Portfolio Website</p>
+            <p className="featureProjectTitle">Portfolio Website Html</p>
             <p className="featureProjectSubTitle">Project objective:</p>
             <p className="featureProjectDescription">
               Provide an optimised, well presented, easy to navigate website
@@ -114,6 +80,38 @@ export const Portfolio = () => {
               <a
                 className="git-hub-link"
                 href="https://github.com/Jason-Smith-Code/portfolio-website"
+                target="_blank"
+              >
+                github
+              </a>
+              <span className="rightBracket">]</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-cell" id="slide3">
+          <div>
+            <div className="projectImage">
+              <img src={keyboard} className="portfolioImage"></img>
+            </div>
+            <p className="featureProjectTitle">Virtual Keyboard</p>
+            <p className="featureProjectSubTitle">Project objective:</p>
+            <p className="featureProjectDescription">
+              A short project, react web application which allows users to
+              interact with a virtual keyboard, the keyboard responses to
+              onClick events, transfering the value to the text area.
+            </p>
+            <p className="featureProjectSubTitle">Technologies used:</p>
+            <p className="featureProjectDescription">
+              HTML &#183; CSS &#183; Javascript &#183; React
+            </p>
+          </div>
+          <div className="git-hub-link-container">
+            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
+              <span className="leftBracket">[</span>
+              <a
+                className="git-hub-link"
+                href="https://github.com/Jason-Smith-Code/virtual-keyboard/"
                 target="_blank"
               >
                 github
