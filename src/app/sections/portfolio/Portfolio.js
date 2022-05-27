@@ -66,8 +66,10 @@ export const Portfolio = () => {
             <p className="featureProjectTitle">Portfolio Website Html</p>
             <p className="featureProjectSubTitle">Project objective:</p>
             <p className="featureProjectDescription">
-              Provide an optimised, well presented, easy to navigate website
-              which contains direct links to my portfolio projects in Github.
+              My task here is to represent myself with a responsive, optimised
+              and easy to navigate website. It also must be very well presented,
+              show casing my graphic design skills. It will contain direct links
+              to all my portfolio projects hosted on Github.
             </p>
             <p className="featureProjectSubTitle">Technologies used:</p>
             <p className="featureProjectDescription">
@@ -98,8 +100,9 @@ export const Portfolio = () => {
             <p className="featureProjectSubTitle">Project objective:</p>
             <p className="featureProjectDescription">
               A short project, react web application which allows users to
-              interact with a virtual keyboard, the keyboard responses to
-              onClick events, transfering the value to the text area.
+              interact with a virtual keyboard, the keyboard is responsive,
+              optimised for all devices, it also responds to onClick events,
+              transfering the corrosponding value to the text area.
             </p>
             <p className="featureProjectSubTitle">Technologies used:</p>
             <p className="featureProjectDescription">

@@ -16,6 +16,10 @@ export const Stats = () => {
     const nodeElements = document.getElementsByClassName("node");
     const gitElements = document.getElementsByClassName("git");
     const jestElements = document.getElementsByClassName("jest");
+    const photoshopElements = document.getElementsByClassName("photoshop");
+    const responsiveElements = document.getElementsByClassName("responsive");
+    const vscodeElements = document.getElementsByClassName("vscode");
+    const githubElements = document.getElementsByClassName("github");
 
     let cssStatMax = 15;
     var cssCounter = 0;
@@ -87,7 +91,7 @@ export const Stats = () => {
       }
     }, 100);
 
-    let jestStatMax = 12;
+    let jestStatMax = 8;
     var jestCounter = 0;
     var jestInterval = setInterval(function () {
       jestElements[jestCounter].style.opacity = "1";
@@ -96,12 +100,159 @@ export const Stats = () => {
         clearInterval(jestInterval);
       }
     }, 100);
+
+    let photoshopStatMax = 12;
+    var photoshopCounter = 0;
+    var photoshopInterval = setInterval(function () {
+      photoshopElements[photoshopCounter].style.opacity = "1";
+      photoshopCounter++;
+      if (photoshopCounter === photoshopStatMax) {
+        clearInterval(photoshopInterval);
+      }
+    }, 100);
+
+    let responsiveStatMax = 16;
+    var responsiveCounter = 0;
+    var responsiveInterval = setInterval(function () {
+      responsiveElements[responsiveCounter].style.opacity = "1";
+      responsiveCounter++;
+      if (responsiveCounter === responsiveStatMax) {
+        clearInterval(responsiveInterval);
+      }
+    }, 100);
+
+    let vscodeStatMax = 14;
+    var vscodeCounter = 0;
+    var vscodeInterval = setInterval(function () {
+      vscodeElements[vscodeCounter].style.opacity = "1";
+      vscodeCounter++;
+      if (vscodeCounter === vscodeStatMax) {
+        clearInterval(vscodeInterval);
+      }
+    }, 100);
+    let githubStatMax = 10;
+    var githubCounter = 0;
+    var githubInterval = setInterval(function () {
+      githubElements[githubCounter].style.opacity = "1";
+      githubCounter++;
+      if (githubCounter === githubStatMax) {
+        clearInterval(githubInterval);
+      }
+    }, 100);
   }
 
   return (
     <section>
       <div id="statContainer" className="centerContainer center">
         <h2 className="headline">My Stats</h2>
+        <div className="statRow">
+          <span className="statsDescription">Visual Studio Code</span>
+          <span>[&nbsp;</span>
+          <span ref={ref} className="vscode dark ">
+            |
+          </span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span className="vscode dark ">|</span>
+          <span>&nbsp;]</span>
+        </div>
+        <div className="statRow">
+          <span className="statsDescription">Github</span>
+          <span>[&nbsp;</span>
+          <span ref={ref} className="github dark ">
+            |
+          </span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span className="github dark ">|</span>
+          <span>&nbsp;]</span>
+        </div>
+        <div className="statRow">
+          <span className="statsDescription">Photoshop CS6</span>
+          <span>[&nbsp;</span>
+          <span ref={ref} className="photoshop dark ">
+            |
+          </span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span className="photoshop dark ">|</span>
+          <span>&nbsp;]</span>
+        </div>
+        <div className="statRow">
+          <span className="statsDescription">Responsive Design:</span>
+          <span>[&nbsp;</span>
+          <span ref={ref} className="responsive dark ">
+            |
+          </span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span className="responsive dark ">|</span>
+          <span>&nbsp;]</span>
+        </div>
         <div className="statRow">
           <span className="statsDescription">HTML:</span>
           <span>[&nbsp;</span>

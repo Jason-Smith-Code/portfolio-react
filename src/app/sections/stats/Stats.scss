@@ -1,5 +1,9 @@
 @media only screen and (min-width: 0px) {
 
+    .css, .html, .javascript, .react, .redux, .react-redux, .redux-toolkit, .git, .node, .jest, .photoshop, .vscode, .responsive, .github {
+        transition: 1s;
+    }
+
     .stats {
         font-size: 1.2em;
     }
@@ -18,7 +22,7 @@
 
     .statsDescription {
         display: inline-block;
-        width: 180px;
+        width: 200px;
         text-align: left;
         letter-spacing: 3px;
     }
@@ -45,6 +49,10 @@
 
     .statRow {
         font-size: 2em;
+    }
+
+    .statsDescription {
+        width: 240px;
     }
 
     .stats {

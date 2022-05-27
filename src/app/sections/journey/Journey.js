@@ -22,9 +22,9 @@ export const Journey = () => {
             Udemy
           </a>{" "}
           and decided to pick a course attempting to learn C#, came across some
-          good courses, and some bad ones too. Youtube is a great place to pick
-          up find tutorials, but not all of my learning came from watching
-          video's. For books I use{" "}
+          good courses, and some bad ones too. Youtube is a great place to find
+          tutorials, but not all of my learning came from watching video's. For
+          books I use{" "}
           <a className="textLink" href="https://www.packtpub.com/">
             www.packt.com
           </a>
