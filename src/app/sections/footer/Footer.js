@@ -17,7 +17,12 @@ export const Footer = () => {
           <ul id="verticalMenu">
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>{" "}
-              <a href="cv.pdf" className="menu-item">
+              <a
+                href="download/cv.pdf"
+                target="_blank"
+                className="menu-item"
+                download="cv.pdf"
+              >
                 C.V
               </a>
               <span className="rightBracket">]</span>
