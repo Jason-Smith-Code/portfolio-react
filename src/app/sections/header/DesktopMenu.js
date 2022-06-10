@@ -14,12 +14,7 @@ export const DesktopMenu = (menuItem) => {
       ) : (
         <li className="menu-item-container menu-spacing">
           <span className="leftBracket">[</span>
-          <a
-            href="download/cv.pdf"
-            target="_blank"
-            className="menu-item"
-            download="cv.pdf"
-          >
+          <a href="/cv.pdf" target="_blank" className="menu-item" download>
             C.V
           </a>
           <span className="rightBracket">]</span>

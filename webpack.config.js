@@ -58,7 +58,7 @@ module.exports = {
      * resolve the one with the extension listed first in the array and skip the rest.
      * This is what enables users to leave off the extension when importing
      */
-    extensions: [".js", ".jsx", ".json", ".css", ".less", ".png"],
+    extensions: [".js", ".jsx", ".json", ".css", ".less", ".png", ".pdf"],
   },
   module: {
     /** "rules"
@@ -85,7 +85,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(pdf|png|jpe?g|gif)$/i,
         use: [
           {
             loader: "file-loader",
