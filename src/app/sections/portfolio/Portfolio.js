@@ -6,6 +6,7 @@ import taskify from "../../../images/portfolio-images/taskify.jpg";
 import weather from "../../../images/portfolio-images/weather.jpg";
 import website from "../../../images/portfolio-images/website.jpg";
 import keyboard from "../../../images/portfolio-images/keyboard.jpg";
+import ultimateFinish from "../../../images/portfolio-images/ultimate-finish.jpg";
 import Flickity from "react-flickity-component";
 
 export const Portfolio = () => {
@@ -61,6 +62,41 @@ export const Portfolio = () => {
         <div className="carousel-cell" id="slide2">
           <div>
             <div className="projectImage">
+              <img src={ultimateFinish} className="portfolioImage"></img>
+            </div>
+            <p className="featureProjectTitle">Ultimate Finish</p>
+            <p className="featureProjectSubTitle">Project objective:</p>
+            <p className="featureProjectDescription">
+              To produce a modern, responsive and optimised website which
+              showcases what the business does. The webste will be easy to
+              navigate, will contain a consistent theme which feels like it
+              belongs to the brand. The goal would be to convert visitors into
+              customers through the display of high quality image assets
+              featuring finished work.
+            </p>
+            <p className="featureProjectSubTitle">Technologies used:</p>
+            <p className="featureProjectDescription">
+              HTML &#183; CSS &#183; Javascript
+            </p>
+          </div>
+          <div className="git-hub-link-container">
+            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
+              <span className="leftBracket">[</span>
+              <a
+                className="git-hub-link"
+                href="https://github.com/Jason-Smith-Code/ultimate-finish/"
+                target="_blank"
+              >
+                github
+              </a>
+              <span className="rightBracket">]</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-cell" id="slide3">
+          <div>
+            <div className="projectImage">
               <img src={website} className="portfolioImage"></img>
             </div>
             <p className="featureProjectTitle">Portfolio Website Html</p>
@@ -91,7 +127,7 @@ export const Portfolio = () => {
           </div>
         </div>
 
-        <div className="carousel-cell" id="slide3">
+        <div className="carousel-cell" id="slide4">
           <div>
             <div className="projectImage">
               <img src={keyboard} className="portfolioImage"></img>
@@ -124,7 +160,7 @@ export const Portfolio = () => {
           </div>
         </div>
 
-        <div className="carousel-cell" id="slide3">
+        <div className="carousel-cell" id="slide5">
           <div>
             <div className="projectImage">
               <img src={weather} className="portfolioImage"></img>
@@ -156,7 +192,7 @@ export const Portfolio = () => {
           </div>
         </div>
 
-        <div className="carousel-cell" id="slide4">
+        <div className="carousel-cell" id="slide6">
           <div>
             <div className="projectImage">
               <img src={findTheHat} className="portfolioImage"></img>
@@ -185,7 +221,7 @@ export const Portfolio = () => {
           </div>
         </div>
 
-        <div className="carousel-cell" id="slide5">
+        <div className="carousel-cell" id="slide7">
           <div>
             <div className="projectImage">
               <img src={sennelier} className="portfolioImage"></img>
