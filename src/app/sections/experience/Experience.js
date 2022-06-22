@@ -16,14 +16,14 @@ export const Experience = () => {
       <div ref={ref} className="text-block centerContainer hidden">
         <h2 className="headline">Experience</h2>
         <p className="text">
-          I'm at the beginning of changing my career which means I have no
-          experience working as a developer in a professional capacity, I'm at a
-          stage where I am ready to enter my first role and what experience I do
-          have has been gained through learning, and building my portfolio. I
-          hope some of the projects I've built interest you and I would
-          certainly love some feedback. You can check my projects out below, and
-          find a link to the project github repository of each project. You can
-          also find a link to my linkedin profile at the bottom of the page.
+          3 Years commercal experience working as a web designer mainly using
+          Html, CSS and some Javascript. 1 Year experience working with more
+          with Javascript and React during my front-end code academy course. I
+          feel I'm at a stage where I am ready to enter a junior role. I hope
+          some of the projects I've built interest you and I would certainly
+          love some feedback. You can check my projects out below, and find a
+          link to the project github repository of each project. You can also
+          find a link to my linkedin profile at the bottom of the page.
         </p>
       </div>
     </section>

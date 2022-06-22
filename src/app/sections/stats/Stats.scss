@@ -1,11 +1,21 @@
 @media only screen and (min-width: 0px) {
 
-    .css, .html, .javascript, .react, .redux, .react-redux, .redux-toolkit, .git, .node, .jest, .photoshop, .vscode, .responsive, .github {
+    .rtl, .react-router, .jsx, .css, .html, .javascript, .react, .redux, .react-redux, .redux-toolkit, .git, .node, .jest, .photoshop, .vscode, .responsive, .github {
         transition: 1s;
     }
 
     .stats {
         font-size: 1.2em;
+    }
+
+    #stat-groups {
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+    }
+
+    .stat-group {
+        margin-bottom: 100px
     }
 
     .centerContainer {
@@ -20,14 +30,19 @@
         margin-top: 50px;
     }
 
-    .statsDescription {
+    .stats-description {
         display: inline-block;
         width: 200px;
         text-align: left;
         letter-spacing: 3px;
     }
 
-    .statRow {
+    .stats-description-skills {
+        letter-spacing: 3px;
+        line-height: 1.1em;
+    }
+
+    .stat-row {
         font-family: 'tekolight';
         display:flex;
         flex-direction: row;
@@ -47,11 +62,11 @@
 
 @media only screen and (min-width: 500px) {
 
-    .statRow {
+    .stat-row {
         font-size: 2em;
     }
 
-    .statsDescription {
+    .stats-description {
         width: 240px;
     }
 
@@ -69,7 +84,18 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    #stat-groups {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
+    .stat-group {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 1266px) {

@@ -17,27 +17,27 @@ export const About = () => {
         <h2 className="headline">About</h2>
         <p className="text">
           For the past 10 years I've been self employed, running a small
-          business which was both a physical and online artist materials store.
-          I've worked alone during this time discovering that I was very much
-          self motivated, determined, and enthusiastic. but during my self
-          employment I wanted to pursue a greater goal. Over the past 2 years I
-          spent my time planning a transition to change my occupation, following
-          a set of goals, learning and absorbing as much as I can whilst
-          balancing my business and home life. Working with code is something
-          I've always wanted to do, I'm keen to learn more and would love an
-          opportunity to settle into a job in this field. Outside of work, I'm a
-          gamer, a huge fan of real time strategies games, action RPG's and
-          occasionally I play first person shooter's (very badly). I also love
-          to draw and paint, although that hobby has taken a back seat recently.
-          I have a beautiful partner called Sam, and a lovely 3 year old son
-          called Casey.
+          business which was both a physical and online artist materials store,
+          at a later date I also began work as a web designer. I've worked alone
+          during this time discovering that I was very much self motivated,
+          determined, and enthusiastic. but during my self employment I wanted
+          to pursue a greater goal, spending the last 2 years planning a
+          transition to change my occupation, following a set of goals, learning
+          and absorbing as much as I can whilst balancing my business and home
+          life. Working with code is something I've always wanted to do, I'm
+          keen to learn more and would love an opportunity to settle into a
+          front end role. Outside of work, I'm a gamer, a huge fan of real time
+          strategies games, action RPG's and occasionally I play first person
+          shooter's (very badly). I also love to draw and paint, although that
+          hobby has taken a back seat recently. I have a beautiful partner
+          called Sam, and a lovely 3 year old son called Casey.
         </p>
         <div id="hobbies-personality">
           <div id="hobbies-container">
             <h4 className="headline">Hobbies</h4>
             <p>Spending time with family</p>
-            <p>Gaminig</p>
-            <p>Learning</p>
+            <p>Gaming</p>
+            <p>Country Walks</p>
             <p>Art, drawing, painting</p>
           </div>
           <div>

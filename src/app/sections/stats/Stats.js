@@ -20,6 +20,29 @@ export const Stats = () => {
     const responsiveElements = document.getElementsByClassName("responsive");
     const vscodeElements = document.getElementsByClassName("vscode");
     const githubElements = document.getElementsByClassName("github");
+    const jsxElements = document.getElementsByClassName("jsx");
+    const reactRouterElements = document.getElementsByClassName("react-router");
+    const rtlElements = document.getElementsByClassName("rtl");
+
+    let rtlStatMax = 8;
+    var rtlCounter = 0;
+    var rtlInterval = setInterval(function () {
+      rtlElements[rtlCounter].style.opacity = "1";
+      rtlCounter++;
+      if (rtlCounter === rtlStatMax) {
+        clearInterval(rtlInterval);
+      }
+    }, 100);
+
+    let reactRouterStatMax = 10;
+    var reactRouterCounter = 0;
+    var reactRouterInterval = setInterval(function () {
+      reactRouterElements[reactRouterCounter].style.opacity = "1";
+      reactRouterCounter++;
+      if (reactRouterCounter === reactRouterStatMax) {
+        clearInterval(reactRouterInterval);
+      }
+    }, 100);
 
     let cssStatMax = 15;
     var cssCounter = 0;
@@ -139,326 +162,444 @@ export const Stats = () => {
         clearInterval(githubInterval);
       }
     }, 100);
+    let jsxStatMax = 10;
+    var jsxCounter = 0;
+    var jsxInterval = setInterval(function () {
+      jsxElements[jsxCounter].style.opacity = "1";
+      jsxCounter++;
+      if (jsxCounter === jsxStatMax) {
+        clearInterval(jsxInterval);
+      }
+    }, 100);
   }
 
   return (
     <section>
       <div id="statContainer" className="centerContainer center">
-        <h2 className="headline">My Stats</h2>
-        <div className="statRow">
-          <span className="statsDescription">Visual Studio Code</span>
-          <span>[&nbsp;</span>
-          <span ref={ref} className="vscode dark ">
-            |
-          </span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span className="vscode dark ">|</span>
-          <span>&nbsp;]</span>
+        <div className="stat-group">
+          <h2 className="headline">My Stats</h2>
+          <p>These stats are an indication of my confidence.</p>
         </div>
-        <div className="statRow">
-          <span className="statsDescription">Github</span>
-          <span>[&nbsp;</span>
-          <span ref={ref} className="github dark ">
-            |
-          </span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span className="github dark ">|</span>
-          <span>&nbsp;]</span>
+        <div id="stat-groups">
+          <div className="stat-group">
+            <h3 className="headline">Languages</h3>
+            <div className="stat-row">
+              <span className="stats-description">HTML:</span>
+              <span>[&nbsp;</span>
+              <span ref={ref} className="html dark ">
+                |
+              </span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span className="html dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">CSS:</span>
+              <span>[&nbsp;</span>
+              <span className="css dark">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span className="css dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Javascript:</span>
+              <span>[&nbsp;</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span className="javascript dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">JSX:</span>
+              <span>[&nbsp;</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span className="jsx dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+          </div>
+          <div className="stat-group">
+            <h3 className="headline">Frameworks</h3>
+            <div className="stat-row">
+              <span className="stats-description">React:</span>
+              <span>[&nbsp;</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span className="react dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Node:</span>
+              <span>[&nbsp;</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span className="node dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+          </div>
+          <div className="stat-group">
+            <h3 className="headline">Libraries</h3>
+            <div className="stat-row">
+              <span className="stats-description">Redux:</span>
+              <span>[&nbsp;</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span className="redux-toolkit dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">React Router:</span>
+              <span>[&nbsp;</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span className="react-router dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Jest:</span>
+              <span>[&nbsp;</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span className="jest dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">React Testing Libary:</span>
+              <span>[&nbsp;</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span className="rtl dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+          </div>
+          <div className="stat-group">
+            <h3 className="headline">Applications</h3>
+            <div className="stat-row">
+              <span className="stats-description">Visual Studio Code</span>
+              <span>[&nbsp;</span>
+              <span ref={ref} className="vscode dark ">
+                |
+              </span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span className="vscode dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Github</span>
+              <span>[&nbsp;</span>
+              <span ref={ref} className="github dark ">
+                |
+              </span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span className="github dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Photoshop CS6</span>
+              <span>[&nbsp;</span>
+              <span ref={ref} className="photoshop dark ">
+                |
+              </span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span className="photoshop dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+            <div className="stat-row">
+              <span className="stats-description">Git:</span>
+              <span>[&nbsp;</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span className="git dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+          </div>
+          <div className="stat-group">
+            <h3 className="headline">Skills</h3>
+            <div className="stat-row">
+              <span className="stats-description">Responsive Design:</span>
+              <span>[&nbsp;</span>
+              <span ref={ref} className="responsive dark ">
+                |
+              </span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span className="responsive dark ">|</span>
+              <span>&nbsp;]</span>
+            </div>
+          </div>
+          <div className="stat-group">
+            <h3 className="headline">Soft Skills</h3>
+            <div className="stat-row">
+              <p className="stats-description-skills">Time Management</p>
+            </div>
+            <div className="stat-row">
+              <p className="stats-description-skills">Communication</p>
+            </div>
+            <div className="stat-row">
+              <p className="stats-description-skills">Self Learning</p>
+            </div>
+            <div className="stat-row">
+              <p className="stats-description-skills">Self Motivation</p>
+            </div>
+            <div className="stat-row">
+              <p className="stats-description-skills">Problem Solving</p>
+            </div>
+          </div>
         </div>
-        <div className="statRow">
-          <span className="statsDescription">Photoshop CS6</span>
-          <span>[&nbsp;</span>
-          <span ref={ref} className="photoshop dark ">
-            |
-          </span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span className="photoshop dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Responsive Design:</span>
-          <span>[&nbsp;</span>
-          <span ref={ref} className="responsive dark ">
-            |
-          </span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span className="responsive dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">HTML:</span>
-          <span>[&nbsp;</span>
-          <span ref={ref} className="html dark ">
-            |
-          </span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span className="html dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">CSS:</span>
-          <span>[&nbsp;</span>
-          <span className="css dark">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span className="css dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Javascript:</span>
-          <span>[&nbsp;</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span className="javascript dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">React:</span>
-          <span>[&nbsp;</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span className="react dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Redux Toolkit:</span>
-          <span>[&nbsp;</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span className="redux-toolkit dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Node:</span>
-          <span>[&nbsp;</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span className="node dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Git:</span>
-          <span>[&nbsp;</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span className="git dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <div className="statRow">
-          <span className="statsDescription">Jest:</span>
-          <span>[&nbsp;</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span className="jest dark ">|</span>
-          <span>&nbsp;]</span>
-        </div>
-        <p className="stat-text">
-          These stats are an indication of my confidence in each language or
-          library
-        </p>
       </div>
     </section>
   );

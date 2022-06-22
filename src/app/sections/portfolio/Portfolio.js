@@ -102,7 +102,7 @@ export const Portfolio = () => {
             <p className="featureProjectTitle">Portfolio Website Html</p>
             <p className="featureProjectSubTitle">Project objective:</p>
             <p className="featureProjectDescription">
-              My task here is to represent myself with a responsive, optimised
+              Represent myself with a responsive, optimised
               and easy to navigate website. It also must be very well presented,
               show casing my graphic design skills. It will contain direct links
               to all my portfolio projects hosted on Github.
