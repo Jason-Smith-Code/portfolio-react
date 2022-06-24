@@ -417,7 +417,7 @@ export const Stats = () => {
               <span>&nbsp;]</span>
             </div>
             <div className="stat-row">
-              <span className="stats-description">React Testing Libary:</span>
+              <span className="stats-description">React TL:</span>
               <span>[&nbsp;</span>
               <span className="rtl dark ">|</span>
               <span className="rtl dark ">|</span>
@@ -445,11 +445,9 @@ export const Stats = () => {
           <div className="stat-group">
             <h3 className="headline">Applications</h3>
             <div className="stat-row">
-              <span className="stats-description">Visual Studio Code</span>
+              <span className="stats-description">Visual Studio Code:</span>
               <span>[&nbsp;</span>
-              <span ref={ref} className="vscode dark ">
-                |
-              </span>
+              <span className="vscode dark ">|</span>
               <span className="vscode dark ">|</span>
               <span className="vscode dark ">|</span>
               <span className="vscode dark ">|</span>
@@ -472,11 +470,9 @@ export const Stats = () => {
               <span>&nbsp;]</span>
             </div>
             <div className="stat-row">
-              <span className="stats-description">Github</span>
+              <span className="stats-description">Github:</span>
               <span>[&nbsp;</span>
-              <span ref={ref} className="github dark ">
-                |
-              </span>
+              <span className="github dark ">|</span>
               <span className="github dark ">|</span>
               <span className="github dark ">|</span>
               <span className="github dark ">|</span>
@@ -499,11 +495,9 @@ export const Stats = () => {
               <span>&nbsp;]</span>
             </div>
             <div className="stat-row">
-              <span className="stats-description">Photoshop CS6</span>
+              <span className="stats-description">Photoshop CS6:</span>
               <span>[&nbsp;</span>
-              <span ref={ref} className="photoshop dark ">
-                |
-              </span>
+              <span className="photoshop dark ">|</span>
               <span className="photoshop dark ">|</span>
               <span className="photoshop dark ">|</span>
               <span className="photoshop dark ">|</span>
@@ -556,9 +550,7 @@ export const Stats = () => {
             <div className="stat-row">
               <span className="stats-description">Responsive Design:</span>
               <span>[&nbsp;</span>
-              <span ref={ref} className="responsive dark ">
-                |
-              </span>
+              <span className="responsive dark ">|</span>
               <span className="responsive dark ">|</span>
               <span className="responsive dark ">|</span>
               <span className="responsive dark ">|</span>
