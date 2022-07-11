@@ -4,6 +4,7 @@ import findTheHat from "../../../images/portfolio-images/findthehat.jpg";
 import sennelier from "../../../images/portfolio-images/sennelier.jpg";
 import taskify from "../../../images/portfolio-images/taskify.jpg";
 import weather from "../../../images/portfolio-images/weather.jpg";
+import reddit from "../../../images/portfolio-images/reddit-mini.jpg";
 import website from "../../../images/portfolio-images/website.jpg";
 import keyboard from "../../../images/portfolio-images/keyboard.jpg";
 import ultimateFinish from "../../../images/portfolio-images/ultimate-finish.jpg";
@@ -24,6 +25,40 @@ export const Portfolio = () => {
         reloadOnUpdate // default false
         static // default false
       >
+        <div className="carousel-cell" id="slide0">
+          <div>
+            <div className="projectImage">
+              <img src={reddit} className="portfolioImage"></img>
+            </div>
+            <p className="featureProjectTitle">Reddit Mini</p>
+            <p className="featureProjectSubTitle">Project objective:</p>
+            <p className="featureProjectDescription">
+              Create a miniture read only version of Reddit. Use reddit API to
+              capture JSON data, and render that data in the form of search
+              results. The user can search for posts, subreddits and read
+              comments on each post.
+            </p>
+            <p className="featureProjectSubTitle">Technologies used:</p>
+            <p className="featureProjectDescription">
+              CSS &#183; Javascript &#183; React &#183; Redux Toolkit &#183;
+              Jest &#183;
+            </p>
+          </div>
+          <div className="git-hub-link-container">
+            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
+              <span className="leftBracket">[</span>
+              <a
+                className="git-hub-link"
+                href="https://github.com/Jason-Smith-Code/reddit-min"
+                target="_blank"
+              >
+                github
+              </a>
+              <span className="rightBracket">]</span>
+            </div>
+          </div>
+        </div>
+
         <div className="carousel-cell" id="slide1">
           <div>
             <div className="projectImage">
@@ -102,10 +137,10 @@ export const Portfolio = () => {
             <p className="featureProjectTitle">Portfolio Website Html</p>
             <p className="featureProjectSubTitle">Project objective:</p>
             <p className="featureProjectDescription">
-              Represent myself with a responsive, optimised
-              and easy to navigate website. It also must be very well presented,
-              show casing my graphic design skills. It will contain direct links
-              to all my portfolio projects hosted on Github.
+              Represent myself with a responsive, optimised and easy to navigate
+              website. It also must be very well presented, show casing my
+              graphic design skills. It will contain direct links to all my
+              portfolio projects hosted on Github.
             </p>
             <p className="featureProjectSubTitle">Technologies used:</p>
             <p className="featureProjectDescription">
