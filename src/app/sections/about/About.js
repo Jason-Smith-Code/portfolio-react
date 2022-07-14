@@ -13,7 +13,7 @@ export const About = () => {
 
   return (
     <section>
-      <div ref={ref} className="text-block centerContainer hidden">
+      <div ref={ref} className="text-block center-container hidden">
         <h2 className="headline">About</h2>
         <p className="text">
           For the past 10 years I've been self employed, running a small

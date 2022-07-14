@@ -13,7 +13,7 @@ export const Journey = () => {
 
   return (
     <section>
-      <div ref={ref} className="text-block centerContainer hidden">
+      <div ref={ref} className="text-block center-container hidden">
         <h2 className="headline">Journey</h2>
         <p className="text">
           I'm self taught, I've gained knowledge from several sources at

@@ -27,7 +27,10 @@ export const Intro = () => {
         <div className="left-aligned-text text-block">
           <p className="preHeading">My name is</p>
           <h1 className="headline mainHeading">Jason Smith</h1>
-          <h2 className="headline">I'm an aspiring front-end developer</h2>
+          <h2 className="headline">
+            I'm an aspiring{" "}
+            <span className="white-text">front-end developer</span>
+          </h2>
           <p>
             I'm <span id="myAge">{calculateAge()}</span> years old and I'm a
             super keen coder whose aim is to continue progressing my skills and
