@@ -12,7 +12,7 @@ export const Journey = () => {
   }
 
   return (
-    <section>
+    <section id="journey">
       <div ref={ref} className="text-block center-container hidden">
         <h2 className="headline">Journey</h2>
         <p className="text">
@@ -35,8 +35,8 @@ export const Journey = () => {
           </a>{" "}
           which turned out to be a fantastic resource for learning. I've found
           that the most effective form of learning for me, is get hands on with
-          code, to set projects for myself covering something I haven't done
-          before.
+          code, to set projects and challenge myself covering something I
+          haven't done before.
         </p>
       </div>
     </section>
