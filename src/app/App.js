@@ -4,10 +4,9 @@ import { About } from "./sections/about/About";
 import { Experience } from "./sections/experience/Experience";
 import { Intro } from "./sections/intro/Intro";
 import { Journey } from "./sections/journey/Journey";
-import { Me } from "./sections/me/Me";
 import { Portfolio } from "./sections/portfolio/Portfolio";
-import { Stats } from "./sections/stats/Stats";
 import { Footer } from "./sections/footer/Footer";
+import Skills from "./sections/skills/Skills";
 import { JsAnimation } from "./sections/jsAnimation/JsAnimation";
 import "./App.scss";
 
@@ -26,11 +25,8 @@ const App = () => {
           <Header />
           <a id="intro"></a>
           <Intro />
-          <a id="me"></a>
-          <Me />
-          <a id="stats"></a>
-          <Stats />
-          <a id="about"></a>
+          <a id="skills"></a>
+          <Skills />
           <About />
           <a id="journey"></a>
           <Journey />
