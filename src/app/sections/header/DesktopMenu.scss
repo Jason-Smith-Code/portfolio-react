@@ -1,0 +1,12 @@
+.menu-item-container {
+    position: relative;
+    &.menu-spacing {
+        margin-left:20px;
+        .leftBracket {
+            left: 0;
+        }
+        .rightBracket {
+            right: 0;
+        }
+    }
+}
