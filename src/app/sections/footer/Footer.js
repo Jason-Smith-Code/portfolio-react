@@ -3,18 +3,19 @@ import "./Footer.scss";
 import Logo from "../../../images/logo-100.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/fontawesome-free-brands";
+
 export const Footer = () => {
   return (
     <footer>
       <div id="footer-section">
         <div className="footer-block">
           <a href="/">
-            <img id="footerlogo" src={Logo} alt="logo"></img>
+            <img id="footer-logo" src={Logo} alt="logo"></img>
           </a>
         </div>
         <div className="footer-block">
           <h6 className="footer-heading">Download</h6>
-          <ul id="verticalMenu">
+          <ul className="verticalMenu">
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>{" "}
               <a href="/cv.pdf" target="_blank" className="menu-item" download>
@@ -26,7 +27,7 @@ export const Footer = () => {
         </div>
         <div className="footer-block">
           <h6 className="footer-heading">Navigation</h6>
-          <ul id="verticalMenu">
+          <ul className="verticalMenu">
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>
               <a className="menu-item" href="#intro">
@@ -73,7 +74,7 @@ export const Footer = () => {
         </div>
         <div className="footer-block">
           <h6 className="footer-heading">Links</h6>
-          <ul id="verticalMenu">
+          <ul className="verticalMenu">
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>
               <a
