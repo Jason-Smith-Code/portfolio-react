@@ -1,164 +1,123 @@
 @use '../../App.scss';
 
-@media only screen and (min-width: 0px) {
-
-    .carousel-cell {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: grab;
-        padding: 5px;
-        border-radius: 10px 30px;
-        width: 300px;
-        margin-right: 50px;
-        background: App.$SuperDarkGrey;
-        counter-increment: gallery-cell;
-        align-items: stretch;
-        min-height: 500px;
+#portfolio {
+    background-color: App.$text;
+    display: flex;
+    flex-direction: column;
+    .portfolio-headline {
+        color: App.$SuperDarkGrey;
+        margin-bottom: 100px;
     }
-
-    .gitProjectLinkContainer {
-        font-size: 1.5em;
+    #project-grid {
+        @media only screen and (min-width: 0px) { 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
+        @media only screen and (min-width: 1200px) { 
+            gap: 50px;
+        }
+        .project-grid-item {
+            @media only screen and (min-width: 0px) { 
+                width: 100%;
+                max-width: 500px;
+                color: App.$text;
+                border: 1px solid App.$SuperDarkGrey;
+                border-radius: 0px 50px;
+                padding: 10px;
+                box-shadow: rgb(0 0 0) 0px 10px 10px 0px;
+            }
+            .inner-project-container {
+                @media only screen and (min-width: 0px) { 
+                    background-color: App.$SuperDarkGrey;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0px 40px;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                @media only screen and (min-width: 992px) { 
+                    padding: 25px;
+                }
+                .project-image {
+                    width: 100%;
+                    border-radius: 0 30px 0 0;
+                    margin-bottom: 25px;
+                }
+                .project-subheading {
+                    font-family: "tekolight", Arial, Helvetica, sans-serif;
+                    color: App.$text;
+                    letter-spacing: 3px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    margin-bottom: 25px;
+                }
+                .project-title {
+                    font-family: "tekolight", Arial, Helvetica, sans-serif;
+                    color: white;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    letter-spacing: 3px;
+                    margin-bottom: 25px;
+                }
+                .project-description {
+                    color: white;
+                    margin-bottom: 25px;
+                }
+                .git-hub-link-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .gitProjectLinkContainer {
+                        font-size: 1.5em;
+                    }
+                    .verticalLinkPadding {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                    .menu-item-container {
+                        position: relative;
+                        .leftBracket {
+                            line-height: 1.5;
+                            font-family: "tekolight", Arial, Helvetica, sans-serif;
+                            color: #FF7B24;
+                            transition: 1s;
+                            text-decoration: none;
+                            font-size: 1.5em;
+                            position: absolute;
+                            transition: linear 200ms;
+                        }
+                        .rightBracket {
+                            line-height: 1.5;
+                            font-family: "tekolight", Arial, Helvetica, sans-serif;
+                            color: #FF7B24;
+                            transition: 1s;
+                            text-decoration: none;
+                            font-size: 1.5em;
+                            position: absolute;
+                            transition: linear 200ms;
+                        }
+                        .git-hub-link {
+                            font-family: "tekolight";
+                            color: #FF7B24;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            letter-spacing: 3px;
+                            font-size: 1.5em;
+                            text-transform: uppercase;
+                            transition: 250ms;
+                        }
+                    }
+                }
+            }
+        }
     }
-
-    .git-hub-link {
-        font-family: 'tekolight';
-        color: App.$text;
-        padding-left: 30px;
-        padding-right: 30px;
-        letter-spacing: 3px;
-        font-size: 1.5em;
-        text-transform: uppercase;
-        transition: 250ms;
-    }
-    .git-hub-link:hover {
-        color:white;
-    }
-
-    .git-hub-link-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .featureProjectDescription {
-        font-size: 16px;
-    }
-    
-    section#featured {
-        display: block;
-        min-height: 0;
-        overflow: hidden;
-        padding: 0;
-    }
-
-    .carousel {
-        background-image: linear-gradient(to right, #c94000 , #FF7B24);
-        padding-top: 200px;
-        padding-bottom: 200px;
-        outline:none;
-        overflow: hidden;
-    }
-    
-    .featureProjectTitle {
-        color: white;
-        font-family: 'tekolight', Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
-        font-size: 2em;
-        margin: 25px 0;
-        letter-spacing: 3px;
-        line-height: 0.9;
-    }
-    
-    .featureProjectSubTitle {
-        color: var(--text);
-        font-family: 'tekolight', Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        letter-spacing: 3px;
-    }
-    
-    .featureProjectDescription {
-        color: white;
-        font-size: 1em;
-        margin-bottom: 25px;
-    }
-
-    .portfolioImage {
-        width: 100%;
-        border-radius: 5px 25px 0 0;
-    }
-
-}
-
-@media only screen and (min-width: 500px) {
-
-    .carousel-cell {
-        padding: 25px;
-        border-radius: 20px 60px;
-        border: 6px solid  App.$text;
-        width: 350px;
-        min-height: 600px;
-    }
-
-    .portfolioImage {
-        border-radius: 10px 50px 0 0;
-    }
-
-    .featureProjectDescription {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    .carousel-cell {
-        padding: 25px;
-        border-radius: 20px 60px;
-        border: 6px solid  App.$text;
-        width: 350px;
-        min-height: 600px;
-    }
-
-    .portfolioImage {
-        border-radius: 10px 50px 0 0;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .carousel-cell {
-        padding: 25px;
-        border-radius: 20px 75px;
-        border: 6px solid  App.$text;
-        width: 400px;
-        min-height: 700px;
-    }
-
-    .portfolioImage {
-        border-radius: 10px 50px 0 0;
-    }
-}
-
-@media only screen and (min-width: 1266px) {
-
-    .carousel-cell {
-        border-radius: 25px 100px;
-        border: 10px solid  App.$text;
-        width: 500px;
-        min-height: 800px;
-    }
-     
-    .portfolioImage {
-        border-radius: 10px 75px 0 0;
-    }
-
-    .gitProjectLinkContainer {
-        font-size: 2em;
-    }
-
-    .featureProjectTitle {
-        font-size: 3em;
-    }
-
 }
