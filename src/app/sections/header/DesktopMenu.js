@@ -1,4 +1,5 @@
 import React from "react";
+import './DesktopMenu.scss';
 
 export const DesktopMenu = (menuItem) => {
   return (
