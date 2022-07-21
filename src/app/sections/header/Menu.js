@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Menu.scss";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
@@ -10,11 +10,7 @@ export const Menu = () => {
       type: "link",
     },
     {
-      name: "me",
-      type: "link",
-    },
-    {
-      name: "stats",
+      name: "skills",
       type: "link",
     },
     {
@@ -71,7 +67,7 @@ export const Menu = () => {
 
   return (
     <>
-      <nav id="desktopMenu">
+      <div id="desktopMenu">
         <ul id="menu">{createDesktopMenuItems()}</ul>
 
         <div
@@ -83,10 +79,10 @@ export const Menu = () => {
           <a className="menu-item">OPEN MENU</a>
           <span className="rightBracket">]</span>
         </div>
-      </nav>
+      </div>
 
       <nav id="mobileMenu" className="off-screen">
-        <ul id="verticalMenu">
+        <ul className="verticalMenu">
           <li className="menu-item-container verticalLinkPadding">
             <span className="leftBracket darkText">[</span>
             <a className="menu-item darkText" onClick={closeMenu}>
