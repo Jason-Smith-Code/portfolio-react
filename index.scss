@@ -1,0 +1,141 @@
+@import './src/app/App.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes small-fade-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@font-face {
+    font-family: 'tekolight';
+    src: url('/src/app/fonts/teko-light-webfont.woff2') format('woff2'),
+         url('/src/app/fonts/teko-light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #FF7B24;
+    background-color: #101010;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.fade-in-element {
+    animation: small-fade-right 1s;
+}
+
+.fade-in-element-slow {
+    animation: large-fade-right 1s;
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-left: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF7B24;
+    border-left: 1px solid black;
+}
+
+/* FONTS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'tekolight', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+q, p, #myAge {
+    line-height: 1.5;
+}
+
+a {
+    font-size: 2em;
+    line-height:1.5;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.textLink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.text {
+    text-align: left;
+}
+/* Helpers */
+
+.hide {
+    display:none;
+}
+
+.inlineBlock {
+    display: inline-block;  
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.left-aligned-text {
+    text-align: left;
+}
+
+.center {
+    align-items: center;
+}
+
+.text-block {
+    max-width: 700px;
+    margin: 0 20px;
+}
