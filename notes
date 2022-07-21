@@ -1,1 +1,6 @@
 https://blog.bitsrc.io/create-react-app-without-create-react-app-b0a5806a92
+
+
+I've used references to the DOM in areas of this app, I need to change this.
+
+I need to animate the portfolio items to make it more interesting
