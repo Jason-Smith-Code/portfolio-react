@@ -1,18 +1,52 @@
-p.preHeading {
-    font-size: 2rem;
-    font-family: 'tekolight', Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-}
-
-.headline {
-    margin:0px 0px 50px 0px;
-}
-
-.mainHeading {
-    font-size: 4rem;
-    color:white;
-}
-
+@import '../../App.scss';
 .white-text {
     color:white;
+}
+
+#intro {
+    border: none;
+    .intro-container {
+        @media only screen and (min-width: 0px) {
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @media only screen and (min-width: 992px) {
+            flex-direction: row;
+            align-items: end;
+        }
+        .portrait-container {
+            @media only screen and (min-width: 0px) {
+                border: 1px solid $text-transparent;
+                border-radius: 0 50%;
+                box-shadow: rgb(0 0 0) 0px 10px 10px 0px;
+                margin: 200px 20px;
+            }
+            @media only screen and (min-width: 992px) {
+                margin:0;
+            }
+            #image-me {
+                width: 100%;
+                max-width: 500px;
+                border-radius: 0 50%;
+                padding: 10px;
+            }
+        }
+        .intro-text-contanier {
+            max-width: 400px;
+            margin-left: 25px;
+            p.preHeading {
+                font-size: 2rem;
+                font-family: 'tekolight', Arial, Helvetica, sans-serif;
+                letter-spacing: 3px;
+            }
+            .headline {
+                margin:0px 0px 25px 0px;
+            }
+            .mainHeading {
+                font-size: 4rem;
+                color:white;
+            }
+        }
+    }
 }
