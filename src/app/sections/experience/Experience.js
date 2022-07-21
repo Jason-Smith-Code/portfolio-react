@@ -12,7 +12,7 @@ export const Experience = () => {
     ref.current.classList.add("fade-in-element");
   }
   return (
-    <section>
+    <section id="experience">
       <div ref={ref} className="text-block center-container hidden">
         <h2 className="headline">Experience</h2>
         <p className="text">
