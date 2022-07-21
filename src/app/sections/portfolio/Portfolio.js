@@ -8,285 +8,129 @@ import reddit from "../../../images/portfolio-images/reddit-mini.jpg";
 import website from "../../../images/portfolio-images/website.jpg";
 import keyboard from "../../../images/portfolio-images/keyboard.jpg";
 import ultimateFinish from "../../../images/portfolio-images/ultimate-finish.jpg";
-import Flickity from "react-flickity-component";
 
 export const Portfolio = () => {
-  const flickityOptions = {
-    initialIndex: 0,
-  };
-
-  function Carousel() {
-    return (
-      <Flickity
-        className={"carousel"} // default ''
-        elementType={"div"} // default 'div'
-        options={flickityOptions} // takes flickity options {}
-        disableImagesLoaded={false} // default false
-        reloadOnUpdate // default false
-        static // default false
-      >
-        <div className="carousel-cell" id="slide0">
-          <div>
-            <div className="projectImage">
-              <img src={reddit} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Reddit Mini</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              Create a miniture read only version of Reddit. Use reddit API to
-              capture JSON data, and render that data in the form of search
-              results. The user can search for posts, subreddits and read
-              comments on each post.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              CSS &#183; Javascript &#183; React &#183; Redux Toolkit &#183;
-              Jest &#183;
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/reddit-min"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide1">
-          <div>
-            <div className="projectImage">
-              <img src={taskify} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Taskify</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              Create a web application using react which allows users to fill in
-              a short form to display their tasks. A user starts off by creating
-              a category to organise and group their tasks. After creating a
-              category the user can then start adding their tasks, each task can
-              then be marked as complete, editted or deleted.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              HTML &#183; CSS &#183; Javascript &#183; React &#183; Redux
-              Toolkit &#183; Jest &#183; React Router
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/taskify"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide2">
-          <div>
-            <div className="projectImage">
-              <img src={ultimateFinish} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Ultimate Finish</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              To produce a modern, responsive and optimised website which
-              showcases what the business does. The webste will be easy to
-              navigate, will contain a consistent theme which feels like it
-              belongs to the brand. The goal would be to convert visitors into
-              customers through the display of high quality image assets
-              featuring finished work.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              HTML &#183; CSS &#183; Javascript
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/ultimate-finish/"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide3">
-          <div>
-            <div className="projectImage">
-              <img src={website} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Portfolio Website Html</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              Represent myself with a responsive, optimised and easy to navigate
-              website. It also must be very well presented, show casing my
-              graphic design skills. It will contain direct links to all my
-              portfolio projects hosted on Github.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              HTML &#183; CSS &#183; Javascript
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/portfolio-website"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide4">
-          <div>
-            <div className="projectImage">
-              <img src={keyboard} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Virtual Keyboard</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              A short project, react web application which allows users to
-              interact with a virtual keyboard, the keyboard is responsive,
-              optimised for all devices, it also responds to onClick events,
-              transfering the corrosponding value to the text area.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              HTML &#183; CSS &#183; Javascript &#183; React
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/virtual-keyboard/"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide5">
-          <div>
-            <div className="projectImage">
-              <img src={weather} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Open Weather App</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              A web application allowing users to perform a search to find out
-              the current weather at that location
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">
-              HTML &#183; CSS &#183; Javascript &#183; React &#183;
-              Redux-Toolkit
-            </p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/open-weather/"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide6">
-          <div>
-            <div className="projectImage">
-              <img src={findTheHat} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Find the Hat</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              To create a node application which allows users to play a simple
-              game in the terminal
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">Javascript &#183; Node</p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/find-your-hat"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="carousel-cell" id="slide7">
-          <div>
-            <div className="projectImage">
-              <img src={sennelier} className="portfolioImage"></img>
-            </div>
-            <p className="featureProjectTitle">Sennelier Web Page</p>
-            <p className="featureProjectSubTitle">Project objective:</p>
-            <p className="featureProjectDescription">
-              Learn about CSS Grid, improve the appearance of an existing web
-              page.
-            </p>
-            <p className="featureProjectSubTitle">Technologies used:</p>
-            <p className="featureProjectDescription">HTML, CSS, Javascript</p>
-          </div>
-          <div className="git-hub-link-container">
-            <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-              <span className="leftBracket">[</span>
-              <a
-                className="git-hub-link"
-                href="https://github.com/Jason-Smith-Code/sennelier-abstract-paint"
-                target="_blank"
-              >
-                github
-              </a>
-              <span className="rightBracket">]</span>
-            </div>
-          </div>
-        </div>
-      </Flickity>
-    );
+  function PortfolioItem(title, image, description, tags, github) {
+    this.title = title;
+    this.image = image;
+    this.description = description;
+    this.tags = tags;
+    this.github = github;
   }
 
-  return <section id="featured">{Carousel()}</section>;
+  const redditWork = new PortfolioItem(
+    "Reddit Mini",
+    reddit,
+    "Create a miniture read only version of Reddit. Use reddit API to capture JSON data, and render that data in the form of search results. The user can search for posts, subreddits and read comments on each post.",
+    "CSS : Javascript : React : Redux Toolkit : Jest",
+    "https://github.com/Jason-Smith-Code/reddit-min"
+  );
+
+  const taskifyWork = new PortfolioItem(
+    "Taskify",
+    taskify,
+    "Create a web application using react which allows users to fill in a short form to display their tasks. A user starts off by creating a category to organise and group their tasks. After creating a category the user can then start adding their tasks, each task can then be marked as complete, editted or deleted.",
+    "HTML : CSS : Javascript : React : Redux Toolkit : Jest : React Router",
+    "https://github.com/Jason-Smith-Code/taskify"
+  );
+
+  const ultimateFinishWork = new PortfolioItem(
+    "Ultimate Finish",
+    ultimateFinish,
+    "To produce a modern, responsive and optimised website which showcases what the business does. The webste will be easy to navigate, will contain a consistent theme which feels like it belongs to the brand. The goal would be to convert visitors into customers through the display of high quality image assets featuring finished work.",
+    "HTML : CSS : Javascript",
+    "https://github.com/Jason-Smith-Code/ultimate-finish/"
+  );
+
+  const jsTechWebsiteWork = new PortfolioItem(
+    "Portfolio Site Version.1",
+    website,
+    "To produce a modern, responsive and optimised website which showcases what the business does. The webste will be easy to navigate, will contain a consistent theme which feels like it belongs to the brand. The goal would be to convert visitors into customers through the display of high quality image assets featuring finished work.",
+    "HTML : CSS : Javascript",
+    "https://github.com/Jason-Smith-Code/portfolio-website/"
+  );
+
+  const keyboardWork = new PortfolioItem(
+    "Virtual Keyboard",
+    keyboard,
+    "A short project, react web application which allows users to interact with a virtual keyboard, the keyboard is responsive, optimised for all devices, it also responds to onClick events, transfering the corrosponding value to the text area.",
+    "HTML : CSS : Javascript : React",
+    "https://github.com/Jason-Smith-Code/virtual-keyboard/"
+  );
+
+  const openWeatherWork = new PortfolioItem(
+    "Open Weather App",
+    weather,
+    "A web application allowing users to perform a search to find out the current weather at that location.",
+    "HTML : CSS : Javascript : React : Redux-Toolkit",
+    "https://github.com/Jason-Smith-Code/open-weather/"
+  );
+
+  const findTheHatWork = new PortfolioItem(
+    "Find Your Hat",
+    findTheHat,
+    "To create a node application which allows users to play a simple game in the terminal. The user must enter a key to move in one of four directions, traversing a grid to reach the exit.",
+    "Javascript : Node",
+    "https://github.com/Jason-Smith-Code/find-your-hat/"
+  );
+
+  const sennelierWebPageWork = new PortfolioItem(
+    "Sennelier Web Page",
+    sennelier,
+    "Learn about CSS Grid, improve the appearance of an existing web page.",
+    "HTML : CSS : Javascript",
+    "https://github.com/Jason-Smith-Code/sennelier-abstract-paint/"
+  );
+
+  const projects = [];
+  projects.push(
+    redditWork,
+    taskifyWork,
+    ultimateFinishWork,
+    jsTechWebsiteWork,
+    keyboardWork,
+    openWeatherWork,
+    findTheHatWork,
+    sennelierWebPageWork
+  );
+
+  function showProjects() {
+    const mappedProjects = projects.map((project, index) => {
+      return (
+        <div key={index} className="project-grid-item">
+          <div className="inner-project-container">
+            <div>
+              <img className="project-image" src={project.image}></img>
+              <p className="project-title">{project.title}</p>
+              <p className="project-subheading">Project Objective:</p>
+              <p className="project-description">{project.description}</p>
+              <p className="project-subheading">Technologies Used:</p>
+              <p className="project-description">{project.tags}</p>
+            </div>
+            <div className="git-hub-link-container">
+              <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
+                <span className="leftBracket">[</span>
+                <a
+                  className="git-hub-link"
+                  href={project.github}
+                  target="_blank"
+                >
+                  github
+                </a>
+                <span className="rightBracket">]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    });
+    return mappedProjects;
+  }
+
+  return (
+    <section id="portfolio">
+      <h2 className="portfolio-headline">Portfolio</h2>
+      <div id="project-grid">{showProjects()}</div>
+    </section>
+  );
 };
