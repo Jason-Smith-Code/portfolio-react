@@ -17,6 +17,9 @@ export const Stats = () => {
     }
   }
 
+  // ! I shouldn't be using document.getElement
+  // Tried to work with useRef with no luck
+
   const skills = [];
   const css = new Stat(
     "CSS",
@@ -100,9 +103,22 @@ export const Stats = () => {
   const responsive = new Stat(
     "Responsive Design",
     "responsive",
-    8,
+    18,
     document.getElementsByClassName("responsive")
   );
+  const scss = new Stat(
+    "SCSS",
+    "scss",
+    14,
+    document.getElementsByClassName("scss")
+  );
+  const mongoDb = new Stat(
+    "MongoDb",
+    "mongo-db",
+    6,
+    document.getElementsByClassName("mongo-db")
+  );
+  const npm = new Stat("npm", "npm", 8, document.getElementsByClassName("npm"));
   // push those skills into the skills array
   skills.push(
     html,
@@ -119,7 +135,10 @@ export const Stats = () => {
     github,
     git,
     photoshop,
-    responsive
+    responsive,
+    scss,
+    mongoDb,
+    npm
   );
 
   if (inViewport) {
@@ -173,7 +192,7 @@ export const Stats = () => {
     <section>
       <div id="statContainer" className="center-container center">
         <h2 className="headline">My Stats</h2>
-        <p className="margin-bottom">
+        <p className="margin-bottom white-text">
           These stats are an indication of my confidence.
         </p>
         {createStatRows()}
