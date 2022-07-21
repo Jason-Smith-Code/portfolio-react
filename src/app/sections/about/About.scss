@@ -1,4 +1,20 @@
+@import '../../App.scss';
+
+
+
+
 @media only screen and (min-width: 0px) {
+    section {
+        border-top: 1px solid $text-transparent;
+    }
+    #about {
+        text-align: center;
+        .text-block {
+            .headline {
+                margin-bottom: 50px;
+            }
+        }
+    }
     .text, #hobbies-container {
         margin-bottom: 50px;
     }
@@ -9,22 +25,10 @@
     }
 }
 
-@media only screen and (min-width: 500px) {
-
-}
-
 @media only screen and (min-width: 768px) {
     #hobbies-personality {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-}
-
-@media only screen and (min-width: 1024px) {
-
-}
-
-@media only screen and (min-width: 1266px) {
-
 }
