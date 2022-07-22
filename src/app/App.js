@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Header } from "./sections/header/Header";
 import { About } from "./sections/about/About";
 import { Experience } from "./sections/experience/Experience";
@@ -7,20 +7,20 @@ import { Journey } from "./sections/journey/Journey";
 import { Portfolio } from "./sections/portfolio/Portfolio";
 import { Footer } from "./sections/footer/Footer";
 import Skills from "./sections/skills/Skills";
-import { JsAnimation } from "./sections/jsAnimation/JsAnimation";
+// import { JsAnimation } from "./sections/jsAnimation/JsAnimation";
 import "./App.scss";
 
 const App = () => {
-  const [animationPlayed, setAnimationPlayed] = useState("false");
+  // const [animationPlayed, setAnimationPlayed] = useState("false");
 
-  const sendDataToParent = (value) => {
-    // the callback. Use a better name
-    setAnimationPlayed(value);
-  };
+  // const sendDataToParent = (value) => {
+  //   // the callback. Use a better name
+  //   setAnimationPlayed(value);
+  // };
 
   return (
     <>
-      {animationPlayed === true ? (
+      {/* {animationPlayed === true ? ( */}
         <>
           <Header />
           <a id="intro"></a>
@@ -36,9 +36,10 @@ const App = () => {
           <Portfolio />
           <Footer />
         </>
-      ) : (
-        <JsAnimation sendDataToParent={sendDataToParent} />
-      )}
+      {/* ) : (
+        ""
+        // <JsAnimation sendDataToParent={sendDataToParent} />
+      )} */}
     </>
   );
 };
