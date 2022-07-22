@@ -44,14 +44,18 @@
         text-align: center;
         padding: 10px;
         width:100%;
-        .icon {
-            color: App.$text;
-            margin: 0 100px;
-            transition: 500ms;
-            &:hover {
-                color: white;
-            }
-        } 
+        .footer-icon-link{
+            display: inline-block;
+            margin: 0 50px;
+            .icon {
+                color: App.$text;
+                margin: 0 100px;
+                transition: 500ms;
+                &:hover {
+                    color: white;
+                }
+            } 
+        }
     }   
     }   
 }
