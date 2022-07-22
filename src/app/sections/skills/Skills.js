@@ -101,6 +101,7 @@ const Skills = () => {
         <div key={index} className="grid-item hidden">
           <img
             src={skill.icon}
+            alt={skill.title}
             width="100px"
             height="auto"
             className="skill-icon"
