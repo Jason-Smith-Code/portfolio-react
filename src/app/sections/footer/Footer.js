@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import Logo from "../../../images/logo-100.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/fontawesome-free-brands";
+import linkedin from '../../../assets/linkedin.svg';
+import github from '../../../assets/github.svg';
 
 export const Footer = () => {
   return (
@@ -102,17 +102,19 @@ export const Footer = () => {
       </div>
       <div id="social-icon-container">
         <ul>
-          <li className="inlineBlock">
+          <li className="footer-icon-link">
             <a
               href="https://www.linkedin.com/in/jason-smith-193674187/"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              <img alt="linkedin icon" src={linkedin} width="30px"
+            height="auto"></img>
             </a>
           </li>
-          <li className="inlineBlock">
+          <li className="footer-icon-link">
             <a href="https://github.com/Jason-Smith-Code/" target="_blank">
-              <FontAwesomeIcon icon={faGithub} className="icon" />
+              <img src={github} width="30px"
+            height="auto" alt="github icon"></img>
             </a>
           </li>
         </ul>
