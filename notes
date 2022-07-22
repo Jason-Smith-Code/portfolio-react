@@ -1,9 +1,18 @@
 https://blog.bitsrc.io/create-react-app-without-create-react-app-b0a5806a92
 
+
+replace menu button with an animated trigger
+
+This site requires javsacript to run, please turn it on
+
 I've used references to the DOM in areas of this app, I need to change this.
 
 I need to animate the portfolio items to make it more interesting
+https://codepen.io/nicolaspavlotsky/pen/wqGgLO
+Also add button mobile to trigger the rotation
 
 need to re apply scss with nesting
-
 need to fix repeating styles on front end
+
+apply fixes to page insights to increase score
+
