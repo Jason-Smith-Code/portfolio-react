@@ -3,6 +3,8 @@
 @media only screen and (min-width: 0px) {
    footer {
     width: 100%;
+    box-shadow: 0 10px 0 #ff7b24 inset;
+    border-top: 10px solid #101010;
     #footer-section {
         @media only screen and (min-width: 0px) {
         padding: 100px 0px;
