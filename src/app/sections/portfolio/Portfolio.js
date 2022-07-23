@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Portfolio.scss";
 import findTheHat from "../../../images/portfolio-images/findthehat.jpg";
 import sennelier from "../../../images/portfolio-images/sennelier.jpg";
@@ -8,6 +8,9 @@ import reddit from "../../../images/portfolio-images/reddit-mini.jpg";
 import website from "../../../images/portfolio-images/website.jpg";
 import keyboard from "../../../images/portfolio-images/keyboard.jpg";
 import ultimateFinish from "../../../images/portfolio-images/ultimate-finish.jpg";
+import right from "../../../assets/right.svg";
+import left from "../../../assets/left.svg";
+import githubButton from "../../../assets/github-button.svg";
 
 export const Portfolio = () => {
   function PortfolioItem(title, image, description, tags, github) {
@@ -18,11 +21,13 @@ export const Portfolio = () => {
     this.github = github;
   }
 
+  const ref = useRef([]);
+
   const redditWork = new PortfolioItem(
     "Reddit Mini",
     reddit,
     "Create a miniture read only version of Reddit. Use reddit API to capture JSON data, and render that data in the form of search results. The user can search for posts, subreddits and read comments on each post.",
-    "CSS : Javascript : React : Redux Toolkit : Jest",
+    "CSS : Javascript : React : Redux : Jest",
     "https://github.com/Jason-Smith-Code/reddit-min"
   );
 
@@ -30,7 +35,7 @@ export const Portfolio = () => {
     "Taskify",
     taskify,
     "Create a web application using react which allows users to fill in a short form to display their tasks. A user starts off by creating a category to organise and group their tasks. After creating a category the user can then start adding their tasks, each task can then be marked as complete, editted or deleted.",
-    "HTML : CSS : Javascript : React : Redux Toolkit : Jest : React Router",
+    "CSS : Javascript : React : Redux : Jest : React Router",
     "https://github.com/Jason-Smith-Code/taskify"
   );
 
@@ -43,9 +48,9 @@ export const Portfolio = () => {
   );
 
   const jsTechWebsiteWork = new PortfolioItem(
-    "Portfolio Site Version.1",
+    "Portfolio V.1",
     website,
-    "To produce a modern, responsive and optimised website which showcases what the business does. The webste will be easy to navigate, will contain a consistent theme which feels like it belongs to the brand. The goal would be to convert visitors into customers through the display of high quality image assets featuring finished work.",
+    "The first version of my portfolio site written in HTML, CSS and Javascript. The purpose of this site is to showcase my portfolio with a moden minimalistic user interface. ",
     "HTML : CSS : Javascript",
     "https://github.com/Jason-Smith-Code/portfolio-website/"
   );
@@ -62,7 +67,7 @@ export const Portfolio = () => {
     "Open Weather App",
     weather,
     "A web application allowing users to perform a search to find out the current weather at that location.",
-    "HTML : CSS : Javascript : React : Redux-Toolkit",
+    "HTML : CSS : Javascript : React : Redux",
     "https://github.com/Jason-Smith-Code/open-weather/"
   );
 
@@ -94,30 +99,98 @@ export const Portfolio = () => {
     sennelierWebPageWork
   );
 
+  function rotateProjectForward(index) {
+    console.log(ref.current.childNodes[index]);
+    ref.current.childNodes[index].style.transform = "rotateY(180deg)";
+  }
+
+  function rotateProjectBackward(index) {
+    console.log(ref.current.childNodes[index]);
+    ref.current.childNodes[index].style.transform = "rotateY(-0deg)";
+  }
+
   function showProjects() {
     const mappedProjects = projects.map((project, index) => {
       return (
         <div key={index} className="project-grid-item">
           <div className="inner-project-container">
-            <div>
-              <img className="project-image" src={project.image}></img>
-              <p className="project-title">{project.title}</p>
-              <p className="project-subheading">Project Objective:</p>
-              <p className="project-description">{project.description}</p>
-              <p className="project-subheading">Technologies Used:</p>
-              <p className="project-description">{project.tags}</p>
-            </div>
-            <div className="git-hub-link-container">
-              <div className="gitProjectLinkContainer menu-item-container verticalLinkPadding">
-                <span className="leftBracket">[</span>
-                <a
-                  className="git-hub-link"
-                  href={project.github}
-                  target="_blank"
+            <div className="inner-project-front">
+              <div>
+                <img className="project-image" src={project.image}></img>
+                <p className="project-subheading">Project Title:</p>
+                <p className="project-title">{project.title}</p>
+                <p className="project-subheading">Technologies Used:</p>
+                <p className="project-description">{project.tags}</p>
+              </div>
+              <div className="button-row">
+                <button className="github-button">
+                  <img
+                    src={githubButton}
+                    alt="flip"
+                    width="30px"
+                    height="auto"
+                    className="flip-icon-right"
+                  ></img>
+                  <a
+                    className="github-button-text"
+                    href={project.github}
+                    target="_blank"
+                  >
+                    Github Link
+                  </a>
+                </button>
+                <button
+                  className="flip-button"
+                  onClick={() => rotateProjectForward(index)}
                 >
-                  github
-                </a>
-                <span className="rightBracket">]</span>
+                  <p className="description-button-text">Description</p>
+                  <img
+                    src={right}
+                    alt="flip"
+                    width="30px"
+                    height="auto"
+                    className="flip-icon-right"
+                  ></img>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="outer-project-container">
+            <div className="outer-project-rear">
+              <div>
+                <p className="project-subheading">Project Objective:</p>
+                <p className="project-description">{project.description}</p>
+              </div>
+              <div className="button-row">
+                <button className="github-button">
+                  <img
+                    src={githubButton}
+                    alt="flip"
+                    width="30px"
+                    height="auto"
+                    className="flip-icon-right"
+                  ></img>
+                  <a
+                    className="github-button-text"
+                    href={project.github}
+                    target="_blank"
+                  >
+                    Github Link
+                  </a>
+                </button>
+                <button
+                  className="flip-button"
+                  onClick={() => rotateProjectBackward(index)}
+                >
+                  <img
+                    src={left}
+                    alt="flip"
+                    width="30px"
+                    height="auto"
+                    className="flip-icon-left"
+                  ></img>{" "}
+                  <p className="flip-button-text">View other side</p>
+                </button>
               </div>
             </div>
           </div>
@@ -130,7 +203,9 @@ export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h2 className="portfolio-headline">Portfolio</h2>
-      <div id="project-grid">{showProjects()}</div>
+      <div ref={ref} id="project-grid">
+        {showProjects()}
+      </div>
     </section>
   );
 };
