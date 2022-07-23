@@ -30,94 +30,178 @@
                 border-radius: 0px 50px;
                 padding: 10px;
                 box-shadow: rgb(0 0 0) 0px 10px 10px 0px;
+                background-color: App.$text;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-perspective: 10000px;
+                perspective: 10000px;
+                -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+                transition: -webkit-transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+                -o-transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+                transition: transform 1.5s cubic-bezier(0.8, 0.2, 0.2, 1);
+                transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1), 
+                -webkit-transform 1.5s cubic-bezier(0.4,0.3, 0.2, 1);
             }
             .inner-project-container {
-                @media only screen and (min-width: 0px) { 
-                    background-color: App.$SuperDarkGrey;
-                    width: 100%;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-transform: translateZ(30px);
+                transform: translateZ(30px);
+                background-color: App.$SuperDarkGrey;
+                width: 100%;
+                height: 100%;
+                border-radius: 0px 40px;
+                padding: 25px;
+                .inner-project-front {
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    -webkit-transform: translateZ(50px);
+                    transform: translateZ(50px);
+                    .project-image {
+                        width: 100%;
+                        border-radius: 0 30px 0 0;
+                        margin-bottom: 25px;
+                    }
+                    .project-subheading {
+                        font-family: "tekolight", Arial, Helvetica, sans-serif;
+                        color: App.$text;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                        margin-bottom: 25px;
+                    }
+                    .project-title {
+                        font-family: "tekolight", Arial, Helvetica, sans-serif;
+                        color: white;
+                        font-size: 3rem;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        letter-spacing: 3px;
+                        margin-bottom: 25px;
+                    }
+                    .project-description {
+                        color: white;
+                        margin-bottom: 25px;
+                    } 
+                }                
+            }
+            .outer-project-container {
+                position: absolute;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-transform: translateZ(-30px);
+                transform: translateZ(-30px);
+                background-color: App.$SuperDarkGrey;
+                top: 10px;
+                left: 10px;
+                width: calc(100% - 20px);
+                height: calc(100% - 20px);
+                border-radius: 0px 40px;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .outer-project-rear {
                     height: 100%;
-                    border-radius: 0px 40px;
-                    padding: 10px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                }
-                @media only screen and (min-width: 992px) { 
-                    padding: 25px;
-                }
-                .project-image {
-                    width: 100%;
-                    border-radius: 0 30px 0 0;
-                    margin-bottom: 25px;
-                }
-                .project-subheading {
-                    font-family: "tekolight", Arial, Helvetica, sans-serif;
-                    color: App.$text;
-                    letter-spacing: 3px;
-                    line-height: 1;
-                    text-transform: uppercase;
-                    font-size: 1.5rem;
-                    margin-bottom: 25px;
-                }
-                .project-title {
-                    font-family: "tekolight", Arial, Helvetica, sans-serif;
-                    color: white;
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                    line-height: 1;
-                    letter-spacing: 3px;
-                    margin-bottom: 25px;
-                }
-                .project-description {
-                    color: white;
-                    margin-bottom: 25px;
-                }
-                .git-hub-link-container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .gitProjectLinkContainer {
-                        font-size: 1.5em;
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                    -webkit-transform: translatez(-50px) rotateY(180deg);
+                    transform: translatez(-50px) rotateY(180deg);
+                    .project-subheading {
+                        font-family: "tekolight", Arial, Helvetica, sans-serif;
+                        color: App.$text;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                        margin-bottom: 25px;
                     }
-                    .verticalLinkPadding {
-                        padding-top: 10px;
-                        padding-bottom: 10px;
+                    .project-title {
+                        font-family: "tekolight", Arial, Helvetica, sans-serif;
+                        color: white;
+                        font-size: 3rem;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        letter-spacing: 3px;
+                        margin-bottom: 25px;
                     }
-                    .menu-item-container {
-                        position: relative;
-                        .leftBracket {
-                            line-height: 1.5;
-                            font-family: "tekolight", Arial, Helvetica, sans-serif;
-                            color: #FF7B24;
-                            transition: 1s;
-                            text-decoration: none;
-                            font-size: 1.5em;
-                            position: absolute;
-                            transition: linear 200ms;
-                        }
-                        .rightBracket {
-                            line-height: 1.5;
-                            font-family: "tekolight", Arial, Helvetica, sans-serif;
-                            color: #FF7B24;
-                            transition: 1s;
-                            text-decoration: none;
-                            font-size: 1.5em;
-                            position: absolute;
-                            transition: linear 200ms;
-                        }
-                        .git-hub-link {
-                            font-family: "tekolight";
-                            color: #FF7B24;
-                            padding-left: 30px;
-                            padding-right: 30px;
-                            letter-spacing: 3px;
-                            font-size: 1.5em;
-                            text-transform: uppercase;
-                            transition: 250ms;
-                        }
-                    }
+                    .project-description {
+                        color: white;
+                        margin-bottom: 25px;
+                    }   
                 }
-            }
+            } 
         }
+    }
+    .flip-button{
+        background-color:App.$SuperDarkGrey;
+        color:white;
+        padding: 10px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 25px;
+        cursor: pointer;
+        .flip-icon-left {
+            margin-right: 20px;
+        }
+        .flip-icon-right {
+            margin-left: 20px;
+        }
+        a {
+            color:white;
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .description-button-text {
+            padding-left:10px;
+            font-size: 1rem;
+        }
+        .flip-button-text {
+            padding-right:10px;
+            font-size: 1rem;
+        }
+    }
+    .github-button {
+        @media only screen and (min-width: 0px) {
+            background-color:App.$text;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 25px;
+            margin-bottom: 25px;
+        }
+        @media only screen and (min-width: 500px) {
+            margin-bottom: 0;
+        }
+        .github-button-text {
+            margin-left:10px;
+        }
+        a {
+            color:App.$SuperDarkGrey;
+            font-size: 1rem;
+            line-height: 1;
+        }
+    }
+    .button-row {
+        @media only screen and (min-width: 0px) {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+        @media only screen and (min-width: 500px) {
+            flex-direction: row;
+        }
+
     }
 }
