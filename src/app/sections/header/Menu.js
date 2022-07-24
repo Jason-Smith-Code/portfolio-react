@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Menu.scss";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
 
 export const Menu = () => {
+  const mobileMenuRef = useRef();
   const menuItems = [
     {
       name: "intro",
@@ -56,13 +57,11 @@ export const Menu = () => {
   };
 
   function openMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.remove("off-screen");
+    mobileMenuRef.current.classList.remove("off-screen");
   }
 
   function closeMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.add("off-screen");
+    mobileMenuRef.current.classList.add("off-screen");
   }
 
   return (
@@ -81,7 +80,7 @@ export const Menu = () => {
         </div>
       </div>
 
-      <nav id="mobileMenu" className="off-screen">
+      <nav ref={mobileMenuRef} id="mobileMenu" className="off-screen">
         <ul className="verticalMenu">
           <li className="menu-item-container verticalLinkPadding">
             <span className="leftBracket darkText">[</span>
