@@ -167,30 +167,6 @@
             font-size: 1rem;
         }
     }
-    .github-button {
-        @media only screen and (min-width: 0px) {
-            background-color:App.$text;
-            padding: 10px 20px 10px 10px;
-            text-transform: uppercase;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border: 1px solid white;
-            border-radius: 25px;
-            margin-bottom: 25px;
-        }
-        @media only screen and (min-width: 500px) {
-            margin-bottom: 0;
-        }
-        a {
-            color:App.$SuperDarkGrey;
-            font-size: 1rem;
-            line-height: 1;
-        }
-        img.flip-icon-right {
-            margin-right: 20px;
-        }
-    }
     .button-row {
         @media only screen and (min-width: 0px) {
             display:flex;
@@ -201,6 +177,26 @@
         @media only screen and (min-width: 500px) {
             flex-direction: row;
         }
-
+        .github-button-text {
+            @media only screen and (min-width: 0px) {
+                background-color:App.$text;
+                padding: 10px 20px 10px 10px;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-bottom: 25px;
+                font-size: 1rem;
+                color: App.$SuperDarkGrey;
+            }
+            @media only screen and (min-width: 500px) {
+                margin-bottom: 0;
+            }
+            img.flip-icon-right {
+                margin-right: 20px;
+            }
+       }
     }
 }
