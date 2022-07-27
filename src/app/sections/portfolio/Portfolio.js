@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import "./Portfolio.scss";
+
+import portfoliov2 from '../../../images/portfolio-images/portfoliov2.jpg';
 import findTheHat from "../../../images/portfolio-images/findthehat.jpg";
 import sennelier from "../../../images/portfolio-images/sennelier.jpg";
 import taskify from "../../../images/portfolio-images/taskify.jpg";
@@ -22,6 +24,14 @@ export const Portfolio = () => {
   }
 
   const ref = useRef([]);
+
+  const portfoliov2Work = new PortfolioItem(
+    "Portfolio V.2",
+    portfoliov2,
+    "Rebuild certain components of the application based on constructive feedback from version one. This involved a rework of the animated skills section, and also the portfolio items user interface.",
+    "CSS : Javascript : React : Redux",
+    "https://github.com/Jason-Smith-Code/portfolio-react"
+  );
 
   const redditWork = new PortfolioItem(
     "Reddit Mini",
@@ -89,6 +99,7 @@ export const Portfolio = () => {
 
   const projects = [];
   projects.push(
+    portfoliov2Work,
     redditWork,
     taskifyWork,
     ultimateFinishWork,
@@ -123,7 +134,11 @@ export const Portfolio = () => {
                 <p className="project-description">{project.tags}</p>
               </div>
               <div className="button-row">
-                <button className="github-button">
+                  <a
+                    className="github-button-text"
+                    href={project.github}
+                    target="_blank"
+                  >
                   <img
                     src={githubButton}
                     alt="flip"
@@ -131,14 +146,10 @@ export const Portfolio = () => {
                     height="auto"
                     className="flip-icon-right"
                   ></img>
-                  <a
-                    className="github-button-text"
-                    href={project.github}
-                    target="_blank"
-                  >
                     Github Link
-                  </a>
-                </button>
+                </a>
+
+
                 <button
                   className="flip-button"
                   onClick={() => rotateProjectForward(index)}
@@ -162,7 +173,11 @@ export const Portfolio = () => {
                 <p className="project-description">{project.description}</p>
               </div>
               <div className="button-row">
-                <button className="github-button">
+              <a
+                    className="github-button-text"
+                    href={project.github}
+                    target="_blank"
+                  >
                   <img
                     src={githubButton}
                     alt="flip"
@@ -170,14 +185,8 @@ export const Portfolio = () => {
                     height="auto"
                     className="flip-icon-right"
                   ></img>
-                  <a
-                    className="github-button-text"
-                    href={project.github}
-                    target="_blank"
-                  >
                     Github Link
-                  </a>
-                </button>
+                </a>
                 <button
                   className="flip-button"
                   onClick={() => rotateProjectBackward(index)}
