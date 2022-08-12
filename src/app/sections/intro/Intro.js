@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useIntersection } from "../../useIntersection";
-import PhotoOfMe from "../../../images/me.jpg";
+import PhotoOfMe from "../../../images/me2.jpg";
 import "./Intro.scss";
 
 export const Intro = () => {
