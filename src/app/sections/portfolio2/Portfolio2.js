@@ -1,5 +1,6 @@
 import React from "react";
 import "./Portfolio.scss";
+
 import findTheHat from "../../../images/portfolio-images/findthehat.jpg";
 import sennelier from "../../../images/portfolio-images/sennelier.jpg";
 import taskify from "../../../images/portfolio-images/taskify.jpg";
