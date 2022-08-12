@@ -113,7 +113,7 @@ export const Footer = () => {
           </li>
           <li className="footer-icon-link">
             <a href="https://github.com/Jason-Smith-Code/" target="_blank">
-              <img src={github} width="30px"
+              <img src={github} width="30px" 
             height="auto" alt="github icon"></img>
             </a>
           </li>
