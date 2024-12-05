@@ -1,0 +1,147 @@
+@import '../../App.scss';
+
+@media only screen and (min-width: 0px) {
+    #history {
+        display: flex;
+        flex-direction: column;
+        .headline {
+            margin-bottom: 50px;
+            color: white;
+        }
+        .history-container {
+            display: flex;
+            flex-direction: column;
+            .time-line-container {
+                @media only screen and (min-width: 0px) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    position: relative;
+                    width: calc(100% - 20px);
+                    margin: 0 10px;
+                }
+                @media only screen and (min-width: 900px) {
+                    flex-direction: column;
+                    max-width: 1200px;
+                    margin: 0 10px;
+                }
+                .time-line-rows {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    @media only screen and (min-width: 900px) {
+                        width: 100%;
+                    }
+                }
+                .time-line-row {
+                    @media only screen and (min-width: 0px) {
+                        width: 100%;
+                        margin-bottom: 8rem;
+                    }
+                    @media only screen and (min-width: 900px) {
+                        margin-bottom: 4rem;
+                    }
+                    .time-line-item {
+                        @media only screen and (min-width: 0px) {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            position: relative;
+                            top: 50px;
+                        }
+                        @media only screen and (min-width: 900px) {
+                            flex-direction: row;
+                            top:0;
+                        }
+                        flex-direction: row;
+                        .time-line-icon-container {
+                            @media only screen and (min-width: 0px) {
+                                display: none;
+                            }
+                            @media only screen and (min-width: 900px) {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                margin: 0 20px;
+                            }
+                            .time-line-circle {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: #101010;
+                                border: 3px solid $text;
+                                z-index: 1;
+                            }
+                        }
+                        .time-line-left {
+                            @media only screen and (min-width: 0px) {
+                                border: 1px solid rgba(255, 124, 36, 0.4901960784);
+                                box-shadow: rgb(0, 0, 0) 0px 10px 10px 0px;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                width: 100%;
+                                justify-content: space-between;
+                            }
+                            @media only screen and (min-width: 900px) {
+                                width: calc(50% - 15px);
+                            }
+                            .time-line-title {
+                                font-size: 2rem;
+                                color: white
+                            }
+                            .time-line-subtitle {
+                                font-size: 1.5rem;
+                                margin-bottom: 1rem;
+                            }
+                            .time-line-description {
+                                color: white
+                            }
+                        }
+                        .time-line-right {
+                            @media only screen and (min-width: 0px) {
+                                padding: 20px;
+                                display: flex;
+                                width: 100%;
+                                position: absolute;
+                                top: -70px;
+                            }
+                            @media only screen and (min-width: 900px) {
+                                width: calc(50% - 15px);
+                                justify-content: center;
+                                flex-direction: column;
+                                position: relative;
+                                top: 0;
+                            }
+                            .date-right {
+                                text-align: right;
+                            }
+                            .time-line-title {
+                                font-size: 2rem;
+                                color: white
+                            }
+                            .time-line-subtitle {
+                                font-size: 1.5rem;
+                                color: white
+                            }
+                            .time-line-description {
+                                color: white
+                            }
+                        }
+                    }
+                }
+                .time-line-bar{
+                    @media only screen and (min-width: 0px) {
+                        background: $text;
+                        width: 10%;
+                    }
+                    @media only screen and (min-width: 900px) {
+                        position: absolute;
+                        height: 100%;
+                        left: calc(50% - 2px);
+                        width: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

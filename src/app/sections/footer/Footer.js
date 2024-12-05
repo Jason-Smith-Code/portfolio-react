@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import Logo from "../../../images/logo-100.png";
-import linkedin from '../../../assets/linkedin.svg';
-import github from '../../../assets/github.svg';
+import linkedin from "../../../assets/linkedin.svg";
+import github from "../../../assets/github.svg";
 
 export const Footer = () => {
   return (
@@ -37,8 +37,8 @@ export const Footer = () => {
             </li>
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>
-              <a className="menu-item" href="#stats">
-                Stats
+              <a className="menu-item" href="#skills">
+                Skills
               </a>
               <span className="rightBracket">]</span>
             </li>
@@ -51,8 +51,8 @@ export const Footer = () => {
             </li>
             <li className="menu-item-container verticalLinkPadding">
               <span className="leftBracket">[</span>
-              <a className="menu-item" href="#journey">
-                Journey
+              <a className="menu-item" href="#history">
+                History
               </a>
               <span className="rightBracket">]</span>
             </li>
@@ -107,14 +107,22 @@ export const Footer = () => {
               href="https://www.linkedin.com/in/jason-smith-193674187/"
               target="_blank"
             >
-              <img alt="linkedin icon" src={linkedin} width="30px"
-            height="auto"></img>
+              <img
+                alt="linkedin icon"
+                src={linkedin}
+                width="30px"
+                height="auto"
+              ></img>
             </a>
           </li>
           <li className="footer-icon-link">
             <a href="https://github.com/Jason-Smith-Code/" target="_blank">
-              <img src={github} width="30px" 
-            height="auto" alt="github icon"></img>
+              <img
+                src={github}
+                width="30px"
+                height="auto"
+                alt="github icon"
+              ></img>
             </a>
           </li>
         </ul>

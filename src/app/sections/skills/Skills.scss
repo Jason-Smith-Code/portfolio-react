@@ -5,6 +5,10 @@
     flex-direction: column;
     .headline {
         margin-bottom: 50px;
+        color: white
+    }
+    .skill-title {
+        color: white
     }
     #skills-grid {
         @media only screen and (min-width: 0px) { 

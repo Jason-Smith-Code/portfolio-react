@@ -19,7 +19,7 @@ export const Menu = () => {
       type: "link",
     },
     {
-      name: "journey",
+      name: "history",
       type: "link",
     },
     {

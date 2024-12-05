@@ -31,12 +31,14 @@ export const Intro = () => {
         <div className="intro-text-contanier">
           <p className="preHeading">My name is</p>
           <h1 className="headline mainHeading">Jason Smith</h1>
-          <p className="preHeading">I'm an aspiring</p>
-          <h2 className="headline white-text">front-end developer</h2>
+          <p className="preHeading">I love design and interfaces</p>
+          <h2 className="headline white-text">React developer</h2>
           <p>
-            I'm <span id="myAge">{calculateAge()}</span> years old and I'm a
-            super keen coder whose aim is to continue progressing my skills and
-            knowedge so that I can become an asset to a team.
+            I'm <span id="myAge">{calculateAge()}</span> old, 
+            highly passionate about coding, 
+            and exceptionally skilled in design. 
+            I'm constantly seeking to enhance my skills and expand my knowledge, 
+            and I believe I can be a valuable asset to your team.
           </p>
         </div>
       </div>

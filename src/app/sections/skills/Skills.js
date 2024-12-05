@@ -28,10 +28,7 @@ const Skills = () => {
 
   const inViewport = useIntersection(ref, "100px"); // Trigger as soon as the element becomes visible
 
-  useEffect(() => {}, []);
-
   const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 
   if (inViewport) {
     var items = $(".grid-item");
@@ -106,7 +103,7 @@ const Skills = () => {
             height="auto"
             className="skill-icon"
           ></img>
-          <p>{skill.title}</p>
+          <p className="skill-title">{skill.title}</p>
         </div>
       );
     });
