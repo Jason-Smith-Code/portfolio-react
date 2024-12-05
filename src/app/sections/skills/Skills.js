@@ -19,8 +19,12 @@ import test from "../../../assets/test.svg";
 import figma from "../../../assets/figma.svg";
 import git from "../../../assets/git.svg";
 import github from "../../../assets/github.svg";
-import npm from "../../../assets/npm.svg";
+import Typescript from "../../../assets/Typescript.svg";
 import responsive from "../../../assets/responsive.svg";
+import Cypress from "../../../assets/cypress.svg";
+import Cucumber from "../../../assets/Cucumber.svg";
+import Confluence from "../../../assets/Confluence.svg";
+// import Bitbucket from "../../../assets/Bitbucket.svg";
 
 // Animate thes stats into view
 const Skills = () => {
@@ -51,11 +55,14 @@ const Skills = () => {
   const htmlElement = new Skill("HTML5", html5);
   const cssElement = new Skill("CSS3 / SCSS", css3);
   const javascriptElement = new Skill("Javascript", javascript);
+  const typeScriptElement = new Skill("Typescript", Typescript);
   const jsxElement = new Skill("JSX", jsx);
   const reactElement = new Skill("React", react);
   const nodeElement = new Skill("Node", node);
   const reduxElement = new Skill("Redux", redux);
   const jestElement = new Skill("Jest", jest);
+  const cypressElement = new Skill("Cypress", Cypress);
+  const cucumberElement = new Skill("Cucumber", Cucumber);
   const rtlElement = new Skill("React Testing Library", test);
   const reactRouterElement = new Skill("React Router", reactRouter);
   const vsCodeElement = new Skill("Visual Studio Code", visualStudio);
@@ -63,20 +70,24 @@ const Skills = () => {
   const figmaElement = new Skill("Figma", figma);
   const gitElement = new Skill("Git", git);
   const githubElement = new Skill("Github", github);
-  const npmElement = new Skill("npm", npm);
   const mongoDbElement = new Skill("MongoDb", mongoDb);
   const responsiveElement = new Skill("Responsive Design", responsive);
   const accessibilityElement = new Skill("Accessibility", w3c);
+  const confluenceElement = new Skill("Confluence", Confluence);
+  const tailwindElement = new Skill("Tailwind",);
 
   skills.push(
     htmlElement,
     cssElement,
     javascriptElement,
+    typeScriptElement,
     jsxElement,
     reactElement,
     nodeElement,
     reduxElement,
     jestElement,
+    cypressElement,
+    cucumberElement,
     rtlElement,
     reactRouterElement,
     vsCodeElement,
@@ -84,13 +95,15 @@ const Skills = () => {
     figmaElement,
     gitElement,
     githubElement,
-    npmElement,
     mongoDbElement,
     responsiveElement,
-    accessibilityElement
+    accessibilityElement,
+    confluenceElement,
+    tailwindElement
+    // bitBucketElement,
+    // agileElement,
+    // jiraElement
   );
-
-  // const inViewport = useIntersection(refs, "100px");
 
   function createSkills() {
     const mappedSkills = skills.map((skill, index) => {

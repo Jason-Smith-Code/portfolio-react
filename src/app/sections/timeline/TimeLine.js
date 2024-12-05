@@ -28,11 +28,7 @@ export const TimeLine = () => {
       title: "Code Accademy",
       subTitle: "Front end developer",
       Description: `
-      I picked this course to refresh and expand upon my existing knowledge, to learn more about Javascript and frameworks such as React. 
-      It gave me the confidence and ability to start my own projects and continue learning. 
-      The course Covered HTML, CSS, Javascript, Version Control, Git, Github, frameworks such as React, libraries such Redux and react router. 
-      I also learned about testing libraries such as Jest, Mocha and react testing library.
-      
+      I chose this course to both refresh and expand my existing knowledge, with a focus on deepening my understanding of JavaScript and modern frameworks like React. It provided me with the confidence and skills needed to start my own projects and continue my learning journey. The course covered a range of essential topics, including HTML, CSS, and JavaScript, as well as version control with Git and GitHub. It also introduced me to popular frameworks such as React, along with libraries like Redux and React Router. Additionally, I gained experience with testing libraries, including Jest, Mocha, and React Testing Library, enhancing my ability to write robust and maintainable code.
       `,
     },
     {
@@ -41,11 +37,7 @@ export const TimeLine = () => {
       title: "Web Designer",
       subTitle: "Self Employed",
       Description: `
-        Worked with small business's in my local area to design and build them fantastic websites that convert visitors into customers. 
-        I used my graphic design skills and knowledge of HTML, CSS, and Javascript to deliver a high quality service. 
-        I held face to face meeting with clients to establish their expectations, to review work and to re-direct where nessecary.
-        Really enjoyed this work but wanted to work in a team, be part of something bigger.
-        
+      I collaborated with small businesses in my local area to design and develop impactful websites that effectively convert visitors into customers. By leveraging my graphic design expertise alongside my knowledge of HTML, CSS, and JavaScript, I was able to deliver high-quality, user-centric solutions. I worked closely with clients through face-to-face meetings to understand their vision, set expectations, review progress, and make adjustments as needed. While I thoroughly enjoyed this work, I was eager to transition into a team environment where I could contribute to larger projects and be part of something more expansive.
         `,
     },
     {

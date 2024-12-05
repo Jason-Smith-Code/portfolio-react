@@ -16,16 +16,13 @@ export const Experience = () => {
       <div ref={ref} className="text-block center-container hidden">
         <h2 className="headline">Experience</h2>
         <p className="text">
-          5 months commercal experience working as a full-stack developer at
-          Accenture. 3 Years commercal experience working as a web designer.
-          Many years experience working with HTML, CSS, JavaScript as well as
-          using many frameworks during the initial learning phase of my career.
-          Experience as an artist and graphic designer contributed to my
-          frontend skill set. <br />
-          <br />I hope some of the projects I've built are of interest. You can
-          check my projects out below, they include a link to the project github
-          repository. You can also find a link to my linkedin profile at the
-          bottom of the page.
+        I have 2 years of commercial experience as a UI Developer at Accenture, where the majority of my work focused on a complex government React project. I played a key role in refactoring the codebase to enhance its performance and maintainability, reducing code duplication, and complexity to improve delivery speed. During this project, I learned TypeScript and focused heavily on reducing vulnerabilities by implementing security best practices. I was also responsible for upgrading Node.js and dependency packages, ensuring the project was always up to date with the latest versions. I delivered a significant number of epics and user stories, helping to drive the project forward while maintaining strong communication with a large team of front end and back end developers aswell as testers, business analysts and UX designers.
+        <br/><br/>
+        In addition to the core development work, I wrote unit tests with Jest, and contributed heavily to Cypress and Cucumber test suites for end-to-end testing. I also created documentation for new joiners, ensuring smooth onboarding and helping the team scale efficiently.
+        <br/><br/>
+        Alongside the government project, I worked on a React-based charity project, where I served as a Team Lead for a smaller initiative. I also evaluated client data, translating it into clear application flow diagrams, and ran show-and-tell sessions to keep the client engaged and aligned with the development progress. I mentored junior developers, helping them improve their skills and gain confidence.
+        <br/><br/>
+        Before transitioning into development, I spent 3 years working as a Web Designer, where my background in art and graphic design heavily influenced my front-end development skills, particularly in UI/UX design. The projects in my portfolio reflect my growth as a developer, and I am continually expanding it to include more advanced work. You can find links to my projects on GitHub below, as well as a link to my LinkedIn profile for more details.
         </p>
       </div>
     </section>
