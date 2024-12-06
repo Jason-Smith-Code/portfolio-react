@@ -24,6 +24,7 @@ import responsive from "../../../assets/responsive.svg";
 import Cypress from "../../../assets/cypress.svg";
 import Cucumber from "../../../assets/Cucumber.svg";
 import Confluence from "../../../assets/Confluence.svg";
+import tailwind from "../../../assets/Tailwind.svg";
 // import Bitbucket from "../../../assets/Bitbucket.svg";
 
 // Animate thes stats into view
@@ -74,7 +75,7 @@ const Skills = () => {
   const responsiveElement = new Skill("Responsive Design", responsive);
   const accessibilityElement = new Skill("Accessibility", w3c);
   const confluenceElement = new Skill("Confluence", Confluence);
-  const tailwindElement = new Skill("Tailwind",);
+  const tailwindElement = new Skill("Tailwind", tailwind);
 
   skills.push(
     htmlElement,
@@ -99,10 +100,7 @@ const Skills = () => {
     responsiveElement,
     accessibilityElement,
     confluenceElement,
-    tailwindElement
-    // bitBucketElement,
-    // agileElement,
-    // jiraElement
+    tailwindElement,
   );
 
   function createSkills() {
