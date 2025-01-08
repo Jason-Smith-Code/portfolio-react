@@ -31,7 +31,7 @@ export const TimeLine = () => {
         </p>
         <br/>
         <p>
-          I had the opportunity to lead a Show and Tell presentation to our team, as well as to other teams and the home office, where I demonstrated the front end of a new route that our team had been working on. This provided an opportunity to highlight the progress we had made and was received well by wider stakeholders.
+          I had the opportunity to lead a Show and Tell presentation to our team and client for a government project, where I demonstrated the front end of a new route that our team had been working on. This provided an opportunity to highlight the progress we had made and was received well by wider stakeholders.
         </p>
         <br/>
         <p>
@@ -112,14 +112,7 @@ export const TimeLine = () => {
       title: "Student At Duchess High School",
       subTitle: "GCSE",
       Description: "",
-    },
-    {
-      dateFrom: "1984",
-      dateTo: "",
-      title: "Born",
-      subTitle: "Ashington, Northumberland, UK",
-      Description: "",
-    },
+    }
   ];
 
   // Animate in the each row when it comes into view

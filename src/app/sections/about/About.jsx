@@ -45,7 +45,6 @@ In everything I do, I remain driven by the excitement of continuous learning, gr
             <h4 className="headline">Personality</h4>
             <p>Honest</p>
             <p>Easy-going</p>
-            <p>Polite</p>
             <p>Determined</p>
             <p>Passionate</p>
           </div>

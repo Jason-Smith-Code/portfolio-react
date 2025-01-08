@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { useIntersection } from "../../useIntersection";
 import PhotoOfMe from "../../../images/me.jpg";
 import "./Intro.scss";
-import { calculateAge } from "../../utility/calculateAge";
 
 export const Intro = () => {
   const ref = useRef();
@@ -23,13 +22,11 @@ export const Intro = () => {
         <div className="intro-text-contanier">
           <p className="preHeading">My name is</p>
           <h1 className="headline mainHeading">Jason Smith</h1>
-          <p className="preHeading">I love design and interfaces</p>
+          <p className="preHeading">I love design and code</p>
           <h2 className="headline white-text">React developer</h2>
           <p>
-            I'm <span id="myAge">{calculateAge()}</span> years old, 
-            highly passionate about coding, exceptionally skilled in design. 
-            Constantly seeking to enhance my skills and expand my knowledge, 
-            I can be a valuable asset to your team.
+            Highly passionate about coding, exceptionally skilled in design. 
+            Constantly seeking to enhance my skills and expand my knowledge.
           </p>
         </div>
       </div>
