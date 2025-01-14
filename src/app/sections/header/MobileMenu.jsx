@@ -26,9 +26,9 @@ export const MobileMenu = (menuItem) => {
           <a
             onClick={closeMenu}
             className="menu-item darkText"
-            href="download/cv.pdf"
+            href="download/JasonSmithCV2025.pdf"
             target="_blank"
-            download="cv.pdf"
+            download="JasonSmithCV2025.pdf"
           >
             {menuItem.name}
           </a>
